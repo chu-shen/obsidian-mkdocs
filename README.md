@@ -1,3 +1,9 @@
+- 自定义字体
+- 使用 Giscus 评论
+- 添加[字数统计及阅读时间插件](https://github.com/TonyCrane/mkdocs-statistics-plugin)
+- 修改[PR 标题](https://github.com/Enveloppe/obsidian-enveloppe/blob/d86555227f455c1f4382d772a3bf0e319e3aaf6a/src/main.ts#L245)
+
+
 # Requirements
 - Python 3.12 or higher
 - [uv](https://docs.astral.sh/uv/)
