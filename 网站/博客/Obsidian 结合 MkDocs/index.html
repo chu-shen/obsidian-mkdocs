@@ -518,7 +518,6 @@
 <a class="md-tag" href="../../../tags/#">博客</a>
 <a class="md-tag" href="../../../tags/#">网站</a>
 <a class="md-tag" href="../../../tags/#github">github</a>
-<a class="md-tag" href="../../../tags/#hexo">hexo</a>
 </nav>
 <!-- Actions -->
 <!--
@@ -528,7 +527,7 @@
 <!-- Page content -->
 <h1 id="obsidian-mkdocs">Obsidian 结合 MkDocs<a class="headerlink" href="#obsidian-mkdocs" title="Permanent link">¶</a></h1>
 <div style="margin-top: -30px; font-size: 0.75em; opacity: 0.7;">
-<p><span class="twemoji"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z"></path></svg></span> 约 800 个字 <span class="twemoji"><svg viewbox="0 0 640 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M392.8 1.2c-17-4.9-34.7 5-39.6 22l-128 448c-4.9 17 5 34.7 22 39.6s34.7-5 39.6-22l128-448c4.9-17-5-34.7-22-39.6m80.6 120.1c-12.5 12.5-12.5 32.8 0 45.3l89.3 89.4-89.4 89.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l112-112c12.5-12.5 12.5-32.8 0-45.3l-112-112c-12.5-12.5-32.8-12.5-45.3 0zm-306.7 0c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3l112 112c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256l89.4-89.4c12.5-12.5 12.5-32.8 0-45.3"></path></svg></span> 9 行代码 <span class="twemoji"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z"></path></svg></span> 预计阅读时间 3 分钟</p>
+<p><span class="twemoji"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z"></path></svg></span> 约 819 个字 <span class="twemoji"><svg viewbox="0 0 640 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M392.8 1.2c-17-4.9-34.7 5-39.6 22l-128 448c-4.9 17 5 34.7 22 39.6s34.7-5 39.6-22l128-448c4.9-17-5-34.7-22-39.6m80.6 120.1c-12.5 12.5-12.5 32.8 0 45.3l89.3 89.4-89.4 89.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l112-112c12.5-12.5 12.5-32.8 0-45.3l-112-112c-12.5-12.5-32.8-12.5-45.3 0zm-306.7 0c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3l112 112c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256l89.4-89.4c12.5-12.5 12.5-32.8 0-45.3"></path></svg></span> 9 行代码 <span class="twemoji"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z"></path></svg></span> 预计阅读时间 3 分钟</p>
 </div>
 <div class="toc">
 <ul>
@@ -554,7 +553,7 @@
 </ul>
 </div>
 <h2 id="_1">背景<a class="headerlink" href="#_1" title="Permanent link">¶</a></h2>
-<p>之前的<span class="ezlinks_not_found ezlinks_not_found" src="../../%25E4%25BD%25BF%25E7%2594%25A8Obsidian%25E3%2580%2581Hexo%25E3%2580%2581MkDocs%25E6%2590%25AD%25E5%25BB%25BA%25E4%25B8%25AA%25E4%25BA%25BA%25E5%258D%259A%25E5%25AE%25A2.md">个人博客搭建方案</span>还是过于繁琐, 不方便发布。步骤一多人就懒</p>
+<p>之前的<a href="../%E4%BD%BF%E7%94%A8Obsidian%E3%80%81Hexo%E3%80%81MkDocs%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" title="个人博客搭建方案">个人博客搭建方案</a>还是过于繁琐, 不方便发布。步骤一多人就懒</p>
 <p>前段时间翻了翻 <a href="https://obsidian.md/blog/2024-goty-winners/">2024 Gems of the year winners - Obsidian</a>，发现<a href="https://github.com/Enveloppe/obsidian-enveloppe">这款插件</a>，配置好后只需在 Obsidian 中添加一个属性，然后点击即可发布。使用无负担，数据不丢失</p>
 <p>话不多说，这就来看看部署流程</p>
 <h2 id="github">配置 Github 仓库<a class="headerlink" href="#github" title="Permanent link">¶</a></h2>
@@ -570,7 +569,7 @@
 <p><em>下面配置可选</em></p>
 <h3 id="_2">域名<a class="headerlink" href="#_2" title="Permanent link">¶</a></h3>
 <p>如果有自己域名，并在 <code>Pages</code> 中填写了，那记得在 <code>docs</code> 目录下添加 <code>CNAME</code>，不然部署时会将仓库里设置的 <code>Custom domain</code> 清空。</p>
-<p>添加后 <span class="ezlinks_not_found ezlinks_not_found" src="../../../../../MkDocs%25E4%25BD%25BF%25E7%2594%25A8%25E6%2589%258B%25E5%2586%258C.md">MkDocs</span> 执行部署时会将此文件添加到根目录</p>
+<p>添加后 <span class="ezlinks_not_found ezlinks_not_found" src="../../../../../MkDocs%E4%BD%BF%E7%94%A8%E6%89%8B%E5%86%8C" title="MkDocs">MkDocs</span> 执行部署时会将此文件添加到根目录</p>
 <h3 id="_3">字体<a class="headerlink" href="#_3" title="Permanent link">¶</a></h3>
 <ol>
 <li>将 <code>mkdocs.yml</code> 中的 <code>font</code> 注释掉</li>
@@ -619,7 +618,10 @@
 <p>删除 <code>${this.app.vault.getName().replaceAll(" ","-").replaceAll(".","-")}-</code> 即可将 PR 标题中的 Obsidian 仓库名去掉，只保留日期</p>
 <h2 id="_8">已知不足<a class="headerlink" href="#_8" title="Permanent link">¶</a></h2>
 <ul>
-<li>双链、悬浮预览，具体可以对比 <span class="ezlinks_not_found ezlinks_not_found" src="../../../../../Obsidian%25E6%258F%2592%25E4%25BB%25B6%25E6%258E%25A8%25E8%258D%2590.md#网络发布%20/%20obsidian-digital-garden&amp;Hexo">obsidian-digital-garden示例站点</span></li>
+<li>双链、悬浮预览，具体可以对比 <span class="ezlinks_not_found ezlinks_not_found" src="../../../../../Obsidian%E6%8F%92%E4%BB%B6%E6%8E%A8%E8%8D%90#网络发布-/-obsidian-digital-garden&amp;hexo" title="obsidian-digital-garden示例站点">obsidian-digital-garden示例站点</span><ul>
+<li>悬浮预览好像有，但是必须是完整链接，而且不能点击</li>
+</ul>
+</li>
 </ul>
 <h2 id="tips">小 tips<a class="headerlink" href="#tips" title="Permanent link">¶</a></h2>
 <ul>
