@@ -46,7 +46,7 @@ status: new
 
 如果有自己域名，并在 `Pages` 中填写了，那记得在 `docs` 目录下添加 `CNAME`，不然部署时会将仓库里设置的 `Custom domain` 清空。
 
-添加后 [[MkDocs使用手册|MkDocs]] 执行部署时会将此文件添加到根目录
+添加后 [[../../../MkDocs使用手册|MkDocs]] 执行部署时会将此文件添加到根目录
 
 
 ### 字体
@@ -112,7 +112,7 @@ uv add mkdocs-statistics-plugin
 
 ## 已知不足
 
-- 双链、悬浮预览，具体可以对比 [[Obsidian插件推荐#网络发布 / obsidian-digital-garden&Hexo|obsidian-digital-garden示例站点]]
+- 双链、悬浮预览，具体可以对比 [[../../../Obsidian插件推荐#网络发布 / obsidian-digital-garden&Hexo|obsidian-digital-garden示例站点]]
 
 
 ## 小 tips
