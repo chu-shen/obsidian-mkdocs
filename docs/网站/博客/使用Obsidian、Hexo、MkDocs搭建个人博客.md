@@ -13,22 +13,21 @@ categories:
 description: 通过改造已有插件，形成Obsidian编写文档，Hexo和MkDocs发布的流程
 date: 2022-07-12 16:33
 abbrlink: 20220712163320
-updated: 2025-03-17T21:01:48+08:00
+updated: 2025-03-17T23:41:35+08:00
 status: deprecated
-comments: true
 share: true
 ---
 # 使用Obsidian、Hexo、MkDocs搭建个人博客
 
 > [!error] 已过时
-> 最新方案👉 [[./Obsidian 结合 MkDocs|Obsidian 结合 MkDocs]]
+> 最新方案👉 [Obsidian 结合 MkDocs](./Obsidian%20%E7%BB%93%E5%90%88%20MkDocs.md)
 
 
 [TOC]
 
 ## 实现流程
 
-![[../../_assets/img/Obsidian、Hexo、MkDocs流转图.excalidraw.svg|Obsidian、Hexo、MkDocs流转图.excalidraw.svg]]
+![Obsidian、Hexo、MkDocs流转图.excalidraw.svg](../../_assets/img/Obsidian%E3%80%81Hexo%E3%80%81MkDocs%E6%B5%81%E8%BD%AC%E5%9B%BE.excalidraw.svg)
 
 ## 实现步骤
 
@@ -82,7 +81,7 @@ share: true
 
 #### MkDocs使用
 
-至此完成Hexo与MkDocs的联动，在[[使用Obsidian、Hexo、MkDocs搭建个人博客#Hexo使用|前两步]]的基础上执行：
+至此完成Hexo与MkDocs的联动，在[前两步](%E4%BD%BF%E7%94%A8Obsidian%E3%80%81Hexo%E3%80%81MkDocs%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2.md#Hexo使用)的基础上执行：
 
 3. 整理`SUMMARY.md`，构建nav导航
 4. MkDocs生成并发布
