@@ -142,3 +142,6 @@ extra:
       index: "index.svg"
 
 copyright: Copyright &copy; 2022 - 2025 CHUSHEN
+
+nav:
+  - 主页: index.md
