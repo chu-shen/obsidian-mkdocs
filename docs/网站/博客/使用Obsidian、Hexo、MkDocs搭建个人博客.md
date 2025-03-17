@@ -13,16 +13,15 @@ categories:
 description: 通过改造已有插件，形成Obsidian编写文档，Hexo和MkDocs发布的流程
 date: 2022-07-12 16:33
 abbrlink: 20220712163320
-updated: 2025-03-17T20:00:26+08:00
-status:
-  - deprecated
+updated: 2025-03-17T21:01:48+08:00
+status: deprecated
 comments: true
 share: true
 ---
 # 使用Obsidian、Hexo、MkDocs搭建个人博客
 
 > [!error] 已过时
-> 最新方案👉 [[../../../Obsidian 结合 MkDocs|Obsidian 结合 MkDocs]]
+> 最新方案👉 [[./Obsidian 结合 MkDocs|Obsidian 结合 MkDocs]]
 
 
 [TOC]
