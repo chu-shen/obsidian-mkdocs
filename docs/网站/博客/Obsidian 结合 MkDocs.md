@@ -8,14 +8,13 @@ tags:
   - 博客
   - 网站
   - github
-  - hexo
 categories:
   - 网站
   - 博客
 description: 使用 obsidian-enveloppe 插件快速搭建基于 MkDocs 的网站，可缩短发布流程
 date: 2025-03-17T13:07:26+08:00
 abbrlink: 20250317130726
-updated: 2025-03-17T23:41:21+08:00
+updated: 2025-03-18T00:10:32+08:00
 share: true
 status: new
 ---
@@ -25,7 +24,7 @@ status: new
 
 ## 背景
 
-之前的[个人博客搭建方案](./%E4%BD%BF%E7%94%A8Obsidian%E3%80%81Hexo%E3%80%81MkDocs%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2.md)还是过于繁琐, 不方便发布。步骤一多人就懒
+之前的[[./使用Obsidian、Hexo、MkDocs搭建个人博客|个人博客搭建方案]]还是过于繁琐, 不方便发布。步骤一多人就懒
 
 前段时间翻了翻 [2024 Gems of the year winners - Obsidian](https://obsidian.md/blog/2024-goty-winners/)，发现[这款插件](https://github.com/Enveloppe/obsidian-enveloppe)，配置好后只需在 Obsidian 中添加一个属性，然后点击即可发布。使用无负担，数据不丢失
 
@@ -46,7 +45,7 @@ status: new
 
 如果有自己域名，并在 `Pages` 中填写了，那记得在 `docs` 目录下添加 `CNAME`，不然部署时会将仓库里设置的 `Custom domain` 清空。
 
-添加后 [MkDocs](../../../MkDocs%E4%BD%BF%E7%94%A8%E6%89%8B%E5%86%8C.md) 执行部署时会将此文件添加到根目录
+添加后 [[../../../MkDocs使用手册|MkDocs]] 执行部署时会将此文件添加到根目录
 
 
 ### 字体
@@ -112,7 +111,8 @@ uv add mkdocs-statistics-plugin
 
 ## 已知不足
 
-- 双链、悬浮预览，具体可以对比 [obsidian-digital-garden示例站点](../../../Obsidian%E6%8F%92%E4%BB%B6%E6%8E%A8%E8%8D%90.md#网络发布%20/%20obsidian-digital-garden&Hexo)
+- 双链、悬浮预览，具体可以对比 [[../../../Obsidian插件推荐#网络发布 / obsidian-digital-garden&Hexo|obsidian-digital-garden示例站点]]
+	- 悬浮预览好像有，但是必须是完整链接，而且不能点击
 
 
 ## 小 tips
