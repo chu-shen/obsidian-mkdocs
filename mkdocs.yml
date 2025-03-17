@@ -8,9 +8,6 @@ theme:
     logo: _assets/meta/logo.png
     favicon: _assets/meta/favicons.png
     custom_dir: overrides
-    font:
-        text: Karla
-        code: Ubuntu Mono
     language: zh
     palette:
     # Light mode
@@ -20,7 +17,7 @@ theme:
       accent: light blue
       toggle:
         icon: material/weather-night
-        name: Passer au mode sombre
+        name: 切换至暗黑模式
 
     # Dark mode
     - media: "(prefers-color-scheme: dark)"
@@ -29,12 +26,13 @@ theme:
       accent: light blue
       toggle:
         icon: material/weather-sunny
-        name: Passer en mode clair
+        name: 切换至白色模式
     features:
         - navigation.indexes
         - navigation.top
         - navigation.tabs
-        - navigation.tabs.sticky
+        - navigation.tracking
+        - navigation.sections
         - search.suggest
         - search.highlight
 # Extensions
@@ -90,14 +88,10 @@ plugins:
   - search
   - meta-descriptions
   - awesome-pages
-  - blog:
-      blog_dir: blog
-      blog_toc: true
-      post_readtime_words_per_minute: 300
   - git-revision-date-localized:
       type: date
       fallback_to_build_date: true
-      locale: fr
+      locale: zh
       custom_format: "%A %d %B %Y"
       enable_creation_date: true
   - ezlinks:
@@ -111,6 +105,7 @@ plugins:
       tags_file: tags.md
   - callouts
   - glightbox
+  - statistics
 hooks:
   - overrides/hooks/on_page_markdown.py
   - overrides/hooks/on_env.py
@@ -122,6 +117,8 @@ extra_javascript:
   - https://cdn.jsdelivr.net/gh/Enveloppe/_static@refs/heads/master/dist/index.js
 
 extra_css:
+    - https://cdn.jsdelivr.net/npm/lxgw-wenkai-screen-web/lxgwwenkaiscreen/result.css
+    - _static/css/font.css
     - https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css
     - _static/css/admonition.css
     - _static/css/custom_attributes.css
@@ -134,18 +131,15 @@ extra:
   no-auto-h1: False
   social:
     - icon: fontawesome/brands/github
-      link: https://github.com/Enveloppe/
-  blog_list:
-    pagination: true
-    pagination_message: true
-    pagination_translation: 'posts in'
-    no_page_found: 'No pages found!'
+      link: https://github.com/chu-shen/
   hooks:
     strip_comments: true
-    fix_heading: true
+    fix_heading: false
   icons:
     folder: "icons/" #from root _assets ; see overrides/partials/nav-item.html and overrides/partials/tabs-item.html
     default:
       file: "file.svg"
       folder: "folder-open.svg"
       index: "index.svg"
+
+copyright: Copyright &copy; 2022 - 2025 CHUSHEN

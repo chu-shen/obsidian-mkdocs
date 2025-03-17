@@ -19,7 +19,8 @@ dependencies = [
     "mkdocs-glightbox",
     "mkdocs-obsidian-links",
     "beautifulsoup4",
-    "babel"
+    "babel",
+    "mkdocs-statistics-plugin>=0.1.4",
 ]
 
 [tool.ruff.lint]
