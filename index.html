@@ -5,25 +5,25 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
-<meta content="通过改造已有插件，形成Obsidian编写文档，Hexo和MkDocs发布的流程" name="description"/>
-<meta content="chushen" name="author"/>
-<link href="https://md.chushen.xyz/%E7%BD%91%E7%AB%99/%E5%8D%9A%E5%AE%A2/%E4%BD%BF%E7%94%A8Obsidian%E3%80%81Hexo%E3%80%81MkDocs%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" rel="canonical"/>
-<link href="../../../_assets/meta/favicons.png" rel="icon"/>
+<meta content="约 74 个字  1 张图片  预计阅读时间不到 1 分钟" name="description"/>
+<meta content="CHUSHEN" name="author"/>
+<link href="https://md.chushen.xyz/" rel="canonical"/>
+<link href="_assets/meta/favicons.png" rel="icon"/>
 <meta content="mkdocs-1.6.1, mkdocs-material-9.5.49" name="generator"/>
-<title>使用Obsidian、Hexo、MkDocs搭建个人博客 - CHUSHEN</title>
-<link href="../../../assets/stylesheets/main.6f8fc17f.min.css" rel="stylesheet"/>
-<link href="../../../assets/stylesheets/palette.06af60db.min.css" rel="stylesheet"/>
+<title>CHUSHEN</title>
+<link href="assets/stylesheets/main.6f8fc17f.min.css" rel="stylesheet"/>
+<link href="assets/stylesheets/palette.06af60db.min.css" rel="stylesheet"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback" rel="stylesheet"/>
 <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
 <link href="https://cdn.jsdelivr.net/npm/lxgw-wenkai-screen-web/lxgwwenkaiscreen/result.css" rel="stylesheet"/>
-<link href="../../../_static/css/font.css" rel="stylesheet"/>
+<link href="_static/css/font.css" rel="stylesheet"/>
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet"/>
-<link href="../../../_static/css/admonition.css" rel="stylesheet"/>
-<link href="../../../_static/css/custom_attributes.css" rel="stylesheet"/>
-<link href="../../../_static/css/customization.css" rel="stylesheet"/>
+<link href="_static/css/admonition.css" rel="stylesheet"/>
+<link href="_static/css/custom_attributes.css" rel="stylesheet"/>
+<link href="_static/css/customization.css" rel="stylesheet"/>
 <link href="https://cdn.jsdelivr.net/gh/Enveloppe/_static@refs/heads/master/dist/styles.css" rel="stylesheet"/>
-<script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+<script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
 <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js"></script>
 <script src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.js"></script>
 <link href="https://unpkg.com/tippy.js@6/animations/scale-subtle.css" rel="stylesheet"/>
@@ -33,12 +33,12 @@
 <meta content="https://md.chushen.xyz/_assets/meta/logo.png" property="og:image"/>
 <meta content="https://md.chushen.xyz/_assets/meta/logo.png" name="twitter:image"/>
 <meta content="https://md.chushen.xyz/" name="site_url"/>
-<meta content="使用Obsidian、Hexo、MkDocs搭建个人博客" property="og:title"/>
-<meta content="使用Obsidian、Hexo、MkDocs搭建个人博客" name="twitter:title"/>
-<meta content="通过改造已有插件，形成Obsidian编写文档，Hexo和MkDocs发布的流程" name="og:description"/>
-<meta content="通过改造已有插件，形成Obsidian编写文档，Hexo和MkDocs发布的流程" name="twitter:description"/>
-<script> document.title = "使用Obsidian、Hexo、MkDocs搭建个人博客" </script>
-<link href="../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+<meta content="CHUSHEN" property="og:title"/>
+<meta content="CHUSHEN" name="twitter:title"/>
+<meta content="约 74 个字  1 张图片  预计阅读时间不到 1 分钟" name="og:description"/>
+<meta content="约 74 个字  1 张图片  预计阅读时间不到 1 分钟" name="twitter:description"/>
+<script> document.title = "CHUSHEN" </script>
+<link href="assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
     html.glightbox-open { overflow: initial; height: 100%; }
     .gslide-title { margin-top: 0px; user-select: text; }
     .gslide-desc { color: #666; user-select: text; }
@@ -47,13 +47,13 @@
     .gdesc-inner { font-size: 0.75rem; }
     body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
     body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
-    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../../assets/javascripts/glightbox.min.js"></script></head>
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="assets/javascripts/glightbox.min.js"></script></head>
 <body data-md-color-accent="light-blue" data-md-color-primary="teal" data-md-color-scheme="default" dir="ltr">
 <input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
 <input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
 <label class="md-overlay" for="__drawer"></label>
 <div data-md-component="skip">
-<a class="md-skip" href="../../..">
+<a class="md-skip" href=".">
           跳转至
         </a>
 </div>
@@ -61,8 +61,8 @@
 </div>
 <header class="md-header" data-md-component="header">
 <nav aria-label="页眉" class="md-header__inner md-grid">
-<a aria-label="CHUSHEN" class="md-header__button md-logo" data-md-component="logo" href="../../.." title="CHUSHEN">
-<img alt="logo" src="../../../_assets/meta/logo.png"/>
+<a aria-label="CHUSHEN" class="md-header__button md-logo" data-md-component="logo" href="." title="CHUSHEN">
+<img alt="logo" src="_assets/meta/logo.png"/>
 </a>
 <label class="md-header__button md-icon" for="__drawer">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"></path></svg>
@@ -77,7 +77,7 @@
 <div class="md-header__topic" data-md-component="header-topic">
 <span class="md-ellipsis">
             
-              使用Obsidian、Hexo、MkDocs搭建个人博客
+              主页
             
           </span>
 </div>
@@ -131,8 +131,8 @@
 <nav aria-label="标签" class="md-tabs" data-md-component="tabs">
 <div class="md-grid">
 <ul class="md-tabs__list">
-<li class="md-tabs__item">
-<a class="md-tabs__link" href="../../..">
+<li class="md-tabs__item md-tabs__item--active">
+<a class="md-tabs__link" href=".">
 <svg height="18" viewbox="0 0 20 20" width="18" xmlns="http://www.w3.org/2000/svg"><path d="M3 5.5v6.604l1.5-2.6a3 3 0 0 1 2.599-1.5H15V7.5A1.5 1.5 0 0 0 13.5 6h-4a.5.5 0 0 1-.353-.146L7.44 4.146A.5.5 0 0 0 7.086 4H4.5A1.5 1.5 0 0 0 3 5.5m1.284 10.485q.106.015.22.015H13.9a2 2 0 0 0 1.732-1l2.163-3.745a1.5 1.5 0 0 0-1.3-2.25H7.1a2 2 0 0 0-1.732 1L3.205 13.75a1.5 1.5 0 0 0 1.079 2.235M2 14.46V5.5A2.5 2.5 0 0 1 4.5 3h2.586a1.5 1.5 0 0 1 1.06.44L9.708 5H13.5A2.5 2.5 0 0 1 16 7.5v.505h.496c1.925 0 3.128 2.083 2.166 3.75L16.499 15.5a3 3 0 0 1-2.598 1.5h-9.4q-.095 0-.186-.007a2.46 2.46 0 0 1-1.438-.592A2.5 2.5 0 0 1 2 14.461" fill="currentColor"></path></svg>
     
   
@@ -150,19 +150,60 @@
 <div class="md-sidebar__inner">
 <nav aria-label="导航栏" class="md-nav md-nav--primary md-nav--lifted" data-md-level="0">
 <label class="md-nav__title" for="__drawer">
-<a aria-label="CHUSHEN" class="md-nav__button md-logo" data-md-component="logo" href="../../.." title="CHUSHEN">
-<img alt="logo" src="../../../_assets/meta/logo.png"/>
+<a aria-label="CHUSHEN" class="md-nav__button md-logo" data-md-component="logo" href="." title="CHUSHEN">
+<img alt="logo" src="_assets/meta/logo.png"/>
 </a>
     CHUSHEN
   </label>
 <ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../..">
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" id="__toc" type="checkbox"/>
+<label class="md-nav__link md-nav__link--active" for="__toc">
+<svg height="18" viewbox="0 0 1024 1024" width="18" xmlns="http://www.w3.org/2000/svg"><path d="M843.5 737.4c-12.4-75.2-79.2-129.1-155.3-125.4S550.9 676 546 752c-153.5-4.8-208-40.7-199.1-113.7c3.3-27.3 19.8-41.9 50.1-49c18.4-4.3 38.8-4.9 57.3-3.2c1.7.2 3.5.3 5.2.5c11.3 2.7 22.8 5 34.3 6.8c34.1 5.6 68.8 8.4 101.8 6.6c92.8-5 156-45.9 159.2-132.7c3.1-84.1-54.7-143.7-147.9-183.6c-29.9-12.8-61.6-22.7-93.3-30.2c-14.3-3.4-26.3-5.7-35.2-7.2c-7.9-75.9-71.5-133.8-147.8-134.4S189.7 168 180.5 243.8s40 146.3 114.2 163.9s149.9-23.3 175.7-95.1c9.4 1.7 18.7 3.6 28 5.8c28.2 6.6 56.4 15.4 82.4 26.6c70.7 30.2 109.3 70.1 107.5 119.9c-1.6 44.6-33.6 65.2-96.2 68.6c-27.5 1.5-57.6-.9-87.3-5.8c-8.3-1.4-15.9-2.8-22.6-4.3c-3.9-.8-6.6-1.5-7.8-1.8l-3.1-.6c-2.2-.3-5.9-.8-10.7-1.3c-25-2.3-52.1-1.5-78.5 4.6c-55.2 12.9-93.9 47.2-101.1 105.8c-15.7 126.2 78.6 184.7 276 188.9c29.1 70.4 106.4 107.9 179.6 87c73.3-20.9 119.3-93.4 106.9-168.6M329.1 345.2c-46 0-83.3-37.3-83.3-83.3s37.3-83.3 83.3-83.3s83.3 37.3 83.3 83.3s-37.3 83.3-83.3 83.3M695.6 845c-46 0-83.3-37.3-83.3-83.3s37.3-83.3 83.3-83.3s83.3 37.3 83.3 83.3s-37.3 83.3-83.3 83.3" fill="currentColor"></path></svg>
+<span class="md-ellipsis">
+    主页
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<a class="md-nav__link md-nav__link--active" href=".">
 <svg height="18" viewbox="0 0 1024 1024" width="18" xmlns="http://www.w3.org/2000/svg"><path d="M843.5 737.4c-12.4-75.2-79.2-129.1-155.3-125.4S550.9 676 546 752c-153.5-4.8-208-40.7-199.1-113.7c3.3-27.3 19.8-41.9 50.1-49c18.4-4.3 38.8-4.9 57.3-3.2c1.7.2 3.5.3 5.2.5c11.3 2.7 22.8 5 34.3 6.8c34.1 5.6 68.8 8.4 101.8 6.6c92.8-5 156-45.9 159.2-132.7c3.1-84.1-54.7-143.7-147.9-183.6c-29.9-12.8-61.6-22.7-93.3-30.2c-14.3-3.4-26.3-5.7-35.2-7.2c-7.9-75.9-71.5-133.8-147.8-134.4S189.7 168 180.5 243.8s40 146.3 114.2 163.9s149.9-23.3 175.7-95.1c9.4 1.7 18.7 3.6 28 5.8c28.2 6.6 56.4 15.4 82.4 26.6c70.7 30.2 109.3 70.1 107.5 119.9c-1.6 44.6-33.6 65.2-96.2 68.6c-27.5 1.5-57.6-.9-87.3-5.8c-8.3-1.4-15.9-2.8-22.6-4.3c-3.9-.8-6.6-1.5-7.8-1.8l-3.1-.6c-2.2-.3-5.9-.8-10.7-1.3c-25-2.3-52.1-1.5-78.5 4.6c-55.2 12.9-93.9 47.2-101.1 105.8c-15.7 126.2 78.6 184.7 276 188.9c29.1 70.4 106.4 107.9 179.6 87c73.3-20.9 119.3-93.4 106.9-168.6M329.1 345.2c-46 0-83.3-37.3-83.3-83.3s37.3-83.3 83.3-83.3s83.3 37.3 83.3 83.3s-37.3 83.3-83.3 83.3M695.6 845c-46 0-83.3-37.3-83.3-83.3s37.3-83.3 83.3-83.3s83.3 37.3 83.3 83.3s-37.3 83.3-83.3 83.3" fill="currentColor"></path></svg>
 <span class="md-ellipsis">
     主页
   </span>
 </a>
+<nav aria-label="目录" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#welcome">
+<span class="md-ellipsis">
+      Welcome~
+    </span>
+</a>
+<nav aria-label="Welcome~" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_1">
+<span class="md-ellipsis">
+      博客
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_2">
+<span class="md-ellipsis">
+      版权声明
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
 </li>
 </ul>
 </nav>
@@ -179,105 +220,26 @@
     </label>
 <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#obsidianhexomkdocs">
+<a class="md-nav__link" href="#welcome">
 <span class="md-ellipsis">
-      使用Obsidian、Hexo、MkDocs搭建个人博客
+      Welcome~
     </span>
 </a>
-<nav aria-label="使用Obsidian、Hexo、MkDocs搭建个人博客" class="md-nav">
+<nav aria-label="Welcome~" class="md-nav">
 <ul class="md-nav__list">
 <li class="md-nav__item">
 <a class="md-nav__link" href="#_1">
 <span class="md-ellipsis">
-      实现流程
+      博客
     </span>
 </a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#_2">
 <span class="md-ellipsis">
-      实现步骤
+      版权声明
     </span>
 </a>
-<nav aria-label="实现步骤" class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#obsidian">
-<span class="md-ellipsis">
-      Obsidian
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#hexo">
-<span class="md-ellipsis">
-      Hexo
-    </span>
-</a>
-<nav aria-label="Hexo" class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#hexo_1">
-<span class="md-ellipsis">
-      Hexo使用
-    </span>
-</a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#mkdocs">
-<span class="md-ellipsis">
-      MkDocs
-    </span>
-</a>
-<nav aria-label="MkDocs" class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#_3">
-<span class="md-ellipsis">
-      思路
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#mkdocs_1">
-<span class="md-ellipsis">
-      MkDocs使用
-    </span>
-</a>
-</li>
-</ul>
-</nav>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#_4">
-<span class="md-ellipsis">
-      成果
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#_5">
-<span class="md-ellipsis">
-      已知不足
-    </span>
-</a>
-<nav aria-label="已知不足" class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#mkdocs_2">
-<span class="md-ellipsis">
-      MkDocs
-    </span>
-</a>
-</li>
-</ul>
-</nav>
 </li>
 </ul>
 </nav>
@@ -312,11 +274,6 @@
 -->
 <!-- Tags -->
 <nav class="md-tags">
-<a class="md-tag" href="../../../tags/#">博客</a>
-<a class="md-tag" href="../../../tags/#">网站</a>
-<a class="md-tag" href="../../../tags/#obsidian">obsidian</a>
-<a class="md-tag" href="../../../tags/#hexo">hexo</a>
-<a class="md-tag" href="../../../tags/#mkdocs">mkdocs</a>
 </nav>
 <!-- Actions -->
 <!--
@@ -324,109 +281,15 @@
   page title (or respectively site name) is used as the main headline.
 -->
 <!-- Page content -->
-<h1 id="obsidianhexomkdocs">使用Obsidian、Hexo、MkDocs搭建个人博客<a class="headerlink" href="#obsidianhexomkdocs" title="Permanent link">¶</a></h1>
+<h1 id="welcome">Welcome~<a class="headerlink" href="#welcome" title="Permanent link">¶</a></h1>
 <div style="margin-top: -30px; font-size: 0.75em; opacity: 0.7;">
-<p><span class="twemoji"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z"></path></svg></span> 约 504 个字 <span class="twemoji"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M21 17H7V3h14m0-2H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2M3 5H1v16a2 2 0 0 0 2 2h16v-2H3m12.96-10.71-2.75 3.54-1.96-2.36L8.5 15h11z"></path></svg></span> 1 张图片 <span class="twemoji"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z"></path></svg></span> 预计阅读时间 2 分钟</p>
+<p><span class="twemoji"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z"></path></svg></span> 约 74 个字 <span class="twemoji"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M21 17H7V3h14m0-2H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2M3 5H1v16a2 2 0 0 0 2 2h16v-2H3m12.96-10.71-2.75 3.54-1.96-2.36L8.5 15h11z"></path></svg></span> 1 张图片 <span class="twemoji"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z"></path></svg></span> 预计阅读时间不到 1 分钟</p>
 </div>
-<div class="admonition danger">
-<p class="admonition-title">已过时</p>
-<p>最新方案👉 <a href="../Obsidian%20%E7%BB%93%E5%90%88%20MkDocs/" title="Obsidian 结合 MkDocs">Obsidian 结合 MkDocs</a></p>
-</div>
-<div class="toc">
-<ul>
-<li><a href="#obsidianhexomkdocs">使用Obsidian、Hexo、MkDocs搭建个人博客</a><ul>
-<li><a href="#_1">实现流程</a></li>
-<li><a href="#_2">实现步骤</a><ul>
-<li><a href="#obsidian">Obsidian</a></li>
-<li><a href="#hexo">Hexo</a><ul>
-<li><a href="#hexo_1">Hexo使用</a></li>
-</ul>
-</li>
-<li><a href="#mkdocs">MkDocs</a><ul>
-<li><a href="#_3">思路</a></li>
-<li><a href="#mkdocs_1">MkDocs使用</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><a href="#_4">成果</a></li>
-<li><a href="#_5">已知不足</a><ul>
-<li><a href="#mkdocs_2">MkDocs</a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</div>
-<h2 id="_1">实现流程<a class="headerlink" href="#_1" title="Permanent link">¶</a></h2>
-<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../../../_assets/img/Obsidian%E3%80%81Hexo%E3%80%81MkDocs%E6%B5%81%E8%BD%AC%E5%9B%BE.excalidraw.svg"><img alt="Obsidian、Hexo、MkDocs流转图.excalidraw.svg" src="../../../_assets/img/Obsidian%E3%80%81Hexo%E3%80%81MkDocs%E6%B5%81%E8%BD%AC%E5%9B%BE.excalidraw.svg" title="Obsidian、Hexo、MkDocs流转图.excalidraw.svg"/></a></p>
-<h2 id="_2">实现步骤<a class="headerlink" href="#_2" title="Permanent link">¶</a></h2>
-<h3 id="obsidian">Obsidian<a class="headerlink" href="#obsidian" title="Permanent link">¶</a></h3>
-<p>使用Obsidian正常完成文档的编写。如果要联动Hexo，则还需进行如下配置：</p>
-<ol>
-<li>文档元数据必须包含<code>abbrlink</code>字段。该字段用于生成永久链接，否则404</li>
-<li>安装<a href="https://github.com/moelody/link-info-server">Link Server Plugin</a>，通过API提供Obsidian文件信息</li>
-</ol>
-<h3 id="hexo">Hexo<a class="headerlink" href="#hexo" title="Permanent link">¶</a></h3>
-<p>除了常规配置外，还需要安装以下插件：</p>
-<ol>
-<li><a href="https://github.com/rozbo/hexo-abbrlink">hexo-abbrlink</a>：用于生成永久链接，对应Obsidian的<code>abbrlink</code>字段</li>
-<li><a href="https://github.com/moelody/hexo-link-obsidian">hexo-link-obsidian</a>：用于请求Obsidian插件，获取文档信息。处理图片、视频、wiki等链接。<ul>
-<li>图片被拷贝至<code>posts</code>目录</li>
-<li>如果转换后的链接文档不在hexo的<code>_posts</code>目录中，则此链接修正为404</li>
-</ul>
-</li>
-</ol>
-<h4 id="hexo_1">Hexo使用<a class="headerlink" href="#hexo_1" title="Permanent link">¶</a></h4>
-<p>至此完成了Obsidian和Hexo的联动，只需要执行以下操作即可：</p>
-<ol>
-<li>拷贝Obsidian文档至Hexo的<code>_posts</code>目录</li>
-<li>Hexo生成并发布</li>
-</ol>
-<h3 id="mkdocs">MkDocs<a class="headerlink" href="#mkdocs" title="Permanent link">¶</a></h3>
-<p><font color="white">虽然Hexo非常不错，但不折腾就难受</font></p>
-<p>鉴于Hexo部分已经把该做的都做了，这里直接偷懒，拷贝一份Hexo处理后的文件到MkDocs目录。</p>
-<h4 id="_3">思路<a class="headerlink" href="#_3" title="Permanent link">¶</a></h4>
-<div class="admonition note">
-<p class="admonition-title">目录说明</p>
-<p>Hexo与MkDocs目录需要在同一级</p>
-</div>
-<p><strong>TL;DR</strong></p>
-<p>使用<a href="https://github.com/chu-shen/hexo-link-obsidian/blob/mkdocs/index.js">该文件</a>替换<code>Hexo/node_modules/hexo-link-obsidian/index.js</code>即可</p>
-<p><strong>思路如下：</strong></p>
-<ol>
-<li>在Hexo执行图片拷贝时，同时复制一份到MkDocs的<code>MkDocs/docs/images</code>目录</li>
-<li>将Hexo处理后的MD文件输出到MkDocs的<code>MkDocs/docs</code>目录<ul>
-<li>处理不正确的URL</li>
-<li>重新添加元数据信息到处理后的MD</li>
-<li>写入到<code>abbrlink.md</code>文件</li>
-</ul>
-</li>
-<li>将处理后的文件链接写入到<code>MkDocs/docs/SUMMARY.md</code>，推荐搭配mkdocs-literate-nav插件使用</li>
-</ol>
-<h4 id="mkdocs_1">MkDocs使用<a class="headerlink" href="#mkdocs_1" title="Permanent link">¶</a></h4>
-<p>至此完成Hexo与MkDocs的联动，在<a href="./#hexo使用" title="前两步">前两步</a>的基础上执行：</p>
-<ol start="3">
-<li>整理<code>SUMMARY.md</code>，构建nav导航</li>
-<li>MkDocs生成并发布</li>
-</ol>
-<h2 id="_4">成果<a class="headerlink" href="#_4" title="Permanent link">¶</a></h2>
-<ul>
-<li><a href="https://chushen.xyz/posts/20220712163320/">Hexo</a></li>
-<li><a href="https://md.chushen.xyz/20220712163320/">MkDocs</a><ul>
-<li><a href="https://github.com/chu-shen/mkdocs-blog">GitHub - chu-shen/mkdocs-blog</a></li>
-</ul>
-</li>
-</ul>
-<h2 id="_5">已知不足<a class="headerlink" href="#_5" title="Permanent link">¶</a></h2>
-<h3 id="mkdocs_2">MkDocs<a class="headerlink" href="#mkdocs_2" title="Permanent link">¶</a></h3>
-<ul>
-<li>Categories界面点击分类并无对应子界面</li>
-<li>Categories不兼容当前使用的格式</li>
-<li>RSS无法使用</li>
-<li>Tag不完善</li>
-<li>MkDocs的标题链接为英文+编号，无法对应</li>
-</ul>
+<h2 id="_1">博客<a class="headerlink" href="#_1" title="Permanent link">¶</a></h2>
+<p>本博客基于<a href="https://www.mkdocs.org/">MkDocs</a>搭建，主题为<a href="https://squidfunk.github.io/mkdocs-material/">Material for MkDocs</a></p>
+<p>搭建流程：<a href="https://md.chushen.xyz/%E7%BD%91%E7%AB%99/%E5%8D%9A%E5%AE%A2/Obsidian%20%E7%BB%93%E5%90%88%20MkDocs/">Obsidian 结合 MkDocs</a></p>
+<h2 id="_2">版权声明<a class="headerlink" href="#_2" title="Permanent link">¶</a></h2>
+<p><a href="http://creativecommons.org/licenses/by-nc-sa/4.0/" rel="license"><img alt="知识共享许可协议" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" style="border-width:0"/></a><br/>本博客所有文章除特别声明外，均采用<a href="http://creativecommons.org/licenses/by-nc-sa/4.0/" rel="license">知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a>进行许可。</p>
 <!-- Source file information -->
 <!-- taken from 
 https://github.com/squidfunk/mkdocs-material/blob/master/src/partials/source-file.html -->
@@ -439,104 +302,18 @@ https://github.com/squidfunk/mkdocs-material/blob/master/src/partials/source-fil
 <!-- mkdocs-git-revision-date-plugin -->
 <br/>
 <u>创建日期</u> :
-        2022年7月12日
-        
-        
-        <br/>
-<u>Author</u> : chushen
-        
-        
-    </small>
+        <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">2025年3月17日</span>
+</small>
 </div>
 <!-- Was this page helpful? -->
 <!-- Comment system -->
 <!-- -->
-<h2 id="__comments">评论</h2>
-<!-- Insert generated snippet here -->
-<script async="" crossorigin="anonymous" data-category="Announcements" data-category-id="DIC_kwDOHobgxs4CQH9m" data-emit-metadata="0" data-input-position="top" data-lang="zh-CN" data-loading="lazy" data-mapping="og:title" data-reactions-enabled="1" data-repo="chu-shen/giscus-for-blog" data-repo-id="R_kgDOHobgxg" data-strict="0" data-theme="preferred_color_scheme" src="https://giscus.app/client.js">
-</script>
-<!-- Synchronize Giscus theme with palette -->
-<script>
-    var giscus = document.querySelector("script[src*=giscus]")
-
-    // Set palette on initial load
-    var palette = __md_get("__palette")
-    if (palette && typeof palette.color === "object") {
-        var theme = palette.color.scheme === "slate"
-            ? "transparent_dark"
-            : "light"
-
-        // Instruct Giscus to set theme
-        giscus.setAttribute("data-theme", theme)
-    }
-
-    // Register event handlers after documented loaded
-    document.addEventListener("DOMContentLoaded", function () {
-        var ref = document.querySelector("[data-md-component=palette]")
-        ref.addEventListener("change", function () {
-            var palette = __md_get("__palette")
-            if (palette && typeof palette.color === "object") {
-                var theme = palette.color.scheme === "slate"
-                    ? "transparent_dark"
-                    : "light"
-
-                // Instruct Giscus to change theme
-                var frame = document.querySelector(".giscus-frame")
-                frame.contentWindow.postMessage(
-                    { giscus: { setConfig: { theme } } },
-                    "https://giscus.app"
-                )
-            }
-        })
-    })
-</script>
-<!-- -->
-<!-- -->
-<h2 id="__comments">评论</h2>
-<!-- Insert generated snippet here -->
-<script async="" crossorigin="anonymous" data-category="Announcements" data-category-id="DIC_kwDOHobgxs4CQH9m" data-emit-metadata="0" data-input-position="top" data-lang="zh-CN" data-loading="lazy" data-mapping="og:title" data-reactions-enabled="1" data-repo="chu-shen/giscus-for-blog" data-repo-id="R_kgDOHobgxg" data-strict="0" data-theme="preferred_color_scheme" src="https://giscus.app/client.js">
-</script>
-<!-- Synchronize Giscus theme with palette -->
-<script>
-    var giscus = document.querySelector("script[src*=giscus]")
-
-    // Set palette on initial load
-    var palette = __md_get("__palette")
-    if (palette && typeof palette.color === "object") {
-        var theme = palette.color.scheme === "slate"
-            ? "transparent_dark"
-            : "light"
-
-        // Instruct Giscus to set theme
-        giscus.setAttribute("data-theme", theme)
-    }
-
-    // Register event handlers after documented loaded
-    document.addEventListener("DOMContentLoaded", function () {
-        var ref = document.querySelector("[data-md-component=palette]")
-        ref.addEventListener("change", function () {
-            var palette = __md_get("__palette")
-            if (palette && typeof palette.color === "object") {
-                var theme = palette.color.scheme === "slate"
-                    ? "transparent_dark"
-                    : "light"
-
-                // Instruct Giscus to change theme
-                var frame = document.querySelector(".giscus-frame")
-                frame.contentWindow.postMessage(
-                    { giscus: { setConfig: { theme } } },
-                    "https://giscus.app"
-                )
-            }
-        })
-    })
-</script>
 <!-- -->
 <script> 
     try {
       const index = document.querySelector('h1').innerHTML;
       if (index === "Index") {
-        document.querySelector('h1').innerHTML = "使用Obsidian、Hexo、MkDocs搭建个人博客";
+        document.querySelector('h1').innerHTML = "主页";
       }
     } catch (error) {
       // console.log(error);
@@ -577,11 +354,11 @@ https://github.com/squidfunk/mkdocs-material/blob/master/src/partials/source-fil
 <div class="md-dialog" data-md-component="dialog">
 <div class="md-dialog__inner md-typeset"></div>
 </div>
-<script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.indexes", "navigation.top", "navigation.tabs", "navigation.tracking", "navigation.sections", "search.suggest", "search.highlight"], "search": "../../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}}</script>
-<script src="../../../assets/javascripts/bundle.88dd0f4e.min.js"></script>
-<script src="../../../_static/js/mathjax.js"></script>
+<script id="__config" type="application/json">{"base": ".", "features": ["navigation.indexes", "navigation.top", "navigation.tabs", "navigation.tracking", "navigation.sections", "search.suggest", "search.highlight"], "search": "assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}}</script>
+<script src="assets/javascripts/bundle.88dd0f4e.min.js"></script>
+<script src="_static/js/mathjax.js"></script>
 <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
-<script src="../../../_static/js/snippets.js"></script>
+<script src="_static/js/snippets.js"></script>
 <script src="https://cdn.jsdelivr.net/gh/Enveloppe/_static@refs/heads/master/dist/index.js"></script>
 <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
 document$.subscribe(() => { lightbox.reload() });
