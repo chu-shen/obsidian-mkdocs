@@ -14,7 +14,7 @@ categories:
 description: 使用 obsidian-enveloppe 插件快速搭建基于 MkDocs 的网站，可缩短发布流程
 date: 2025-03-17T13:07:26+08:00
 abbrlink: 20250317130726
-updated: 2025-03-18T00:10:32+08:00
+updated: 2025-03-18T11:50:48+08:00
 share: true
 status: new
 ---
@@ -30,7 +30,7 @@ status: new
 
 话不多说，这就来看看部署流程
 
-## 配置 Github 仓库
+## 配置 GitHub 仓库
 
 
 1. 在 [Mkdocs](https://enveloppe.ovh/wikis/Mkdocs/#quick-installation-tutorial) 的指导下，使用[提供的mkdocs模板](https://github.com/enveloppe/mkdocs/generate) 创建自己的仓库
@@ -43,7 +43,7 @@ status: new
 
 ### 域名
 
-如果有自己域名，并在 `Pages` 中填写了，那记得在 `docs` 目录下添加 `CNAME`，不然部署时会将仓库里设置的 `Custom domain` 清空。
+如果有自己域名，并在 GitHub `Pages` 中填写了，那记得在 `docs` 目录下添加 `CNAME`，不然部署时会将仓库里设置的 `Custom domain` 清空。
 
 添加后 [[../../../MkDocs使用手册|MkDocs]] 执行部署时会将此文件添加到根目录
 
@@ -75,7 +75,7 @@ status: new
 
 按照[文档](https://github.com/TonyCrane/mkdocs-statistics-plugin)在 `mkdocs.yml` 中添加插件
 
-此 Obsidian 插件使用 uv 进行管理配置，所以要更新下配置文件：
+Obsidian-enveloppe 插件使用 uv 管理依赖配置，把前面创建的仓库克隆下来，执行命令更新下配置文件：
 ```shell
 pip install uv
 uv add mkdocs-statistics-plugin
@@ -109,18 +109,23 @@ uv add mkdocs-statistics-plugin
 删除 `${this.app.vault.getName().replaceAll(" ","-").replaceAll(".","-")}-` 即可将 PR 标题中的 Obsidian 仓库名去掉，只保留日期
 
 
+## 成果
+
+- [GitHub - chu-shen/obsidian-mkdocs](https://github.com/chu-shen/obsidian-mkdocs)
+
+
 ## 已知不足
 
 - 双链、悬浮预览，具体可以对比 [[../../../Obsidian插件推荐#网络发布 / obsidian-digital-garden&Hexo|obsidian-digital-garden示例站点]]
-	- 悬浮预览好像有，但是必须是完整链接，而且不能点击
+	- 悬浮预览使用的是 [Tippy.js](https://tippyjs.bootcss.com/)。效果不好，不能点击，而且必须是完整链接才能预览，所以基本没用
 
 
 ## 小 tips
 
 - `categories` 如果添加多个，会在目录中形成嵌套关系。如果使用 `/` 也会形成嵌套
 
-| 元数据字段    | 类型  | 说明                                     |
-| -------- | --- | -------------------------------------- |
-| Share    | 复选框 | 勾选代表分享上传至网络                            |
-| Comments | 复选框 | 勾选代表此篇文章开启评论                           |
-| Status   | 文本  | 文章状态，MkDocs 支持的 `new`、`deprecated`、自定义 |
+| 元数据字段    | 类型  | 说明                                      |
+| -------- | --- | --------------------------------------- |
+| Share    | 复选框 | 勾选代表分享上传至网络                             |
+| Comments | 复选框 | 勾选代表此篇文章开启[[Obsidian 结合 MkDocs#评论\|评论]] |
+| Status   | 文本  | 文章状态，MkDocs 支持的 `new`、`deprecated`、自定义  |
