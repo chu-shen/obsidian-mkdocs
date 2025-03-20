@@ -17,7 +17,7 @@ categories:
 description: 使用 obsidian-enveloppe 插件快速搭建基于 MkDocs 的网站，可缩短发布流程
 date: 2025-03-17T13:07:26+08:00
 abbrlink: 20250317130726
-updated: 2025-03-20T12:25:29+08:00
+updated: 2025-03-20T16:31:46+08:00
 share: true
 status: new
 ---
@@ -111,6 +111,19 @@ uv add mkdocs-statistics-plugin
 
 删除 `${this.app.vault.getName().replaceAll(" ","-").replaceAll(".","-")}-` 即可将 PR 标题中的 Obsidian 仓库名去掉，只保留日期
 
+### 中文目录链接
+
+对于中文标题必须进行修改后才能正确跳转链接
+
+-  `mkdocs.yml` 中添加 `slugify`，指定[处理逻辑](https://squidfunk.github.io/mkdocs-material/setup/extensions/python-markdown/?h=permalink#+toc.slugify)，更多参数见[pymdown](https://facelessuser.github.io/pymdown-extensions/extras/slugs/)
+	```yml
+	markdown_extensions:
+	  - toc:
+	      permalink: true
+	      slugify: !!python/object/apply:pymdownx.slugs.slugify {}
+	```
+
+- Obsidian 中将 `Sluglify anchor in markdown links` 设置为 `Convert all to ……` (strict 模式)
 
 ## 成果
 
