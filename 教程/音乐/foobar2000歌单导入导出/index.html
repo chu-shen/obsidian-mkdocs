@@ -329,7 +329,7 @@
 </nav>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#SQLite导入">
+<a class="md-nav__link" href="#sqlite导入">
 <span class="md-ellipsis">
       SQLite导入
     </span>
@@ -393,7 +393,7 @@
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#SQLite导出">
+<a class="md-nav__link" href="#sqlite导出">
 <span class="md-ellipsis">
       SQLite导出
     </span>
@@ -548,7 +548,7 @@
 </nav>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#SQLite导入">
+<a class="md-nav__link" href="#sqlite导入">
 <span class="md-ellipsis">
       SQLite导入
     </span>
@@ -612,7 +612,7 @@
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#SQLite导出">
+<a class="md-nav__link" href="#sqlite导出">
 <span class="md-ellipsis">
       SQLite导出
     </span>
@@ -675,7 +675,7 @@
 <li><a href="#利用m3u路径匹配">利用m3u路径匹配</a></li>
 </ul>
 </li>
-<li><a href="#SQLite导入">SQLite导入</a><ul>
+<li><a href="#sqlite导入">SQLite导入</a><ul>
 <li><a href="#前言">前言</a></li>
 <li><a href="#准备歌曲">准备歌曲</a></li>
 <li><a href="#建表">建表</a></li>
@@ -687,7 +687,7 @@
 </li>
 <li><a href="#导出">导出</a><ul>
 <li><a href="#一些方法_1">一些方法</a></li>
-<li><a href="#SQLite导出">SQLite导出</a></li>
+<li><a href="#sqlite导出">SQLite导出</a></li>
 </ul>
 </li>
 </ul>
@@ -726,7 +726,7 @@
 </div>
 <p><code>m3u</code>在<code>foobar2000</code>中是绝对路径，可以扫描本地音乐然后导入👉<a href="../%E7%BD%91%E6%98%93%E4%BA%91%E6%AD%8C%E5%8D%95%E5%AF%BC%E5%85%A5%E5%AF%BC%E5%87%BA/#lx-music" title="网易云歌单导入导出 &gt; lx-music">网易云歌单导入导出 &gt; lx-music</a></p>
 <p>然后可以使用此脚本匹配本地音乐，生成<code>m3u8</code>👉<a href="https://github.com/LuckyPuppy514/txt-to-m3u">GitHub - LuckyPuppy514/txt-to-m3u: 一个用于把洛雪音乐txt歌单转m3u歌单的 Powershell 脚本</a></p>
-<h3 id="SQLite导入">SQLite导入<a class="headerlink" href="#SQLite导入" title="Permanent link">¶</a></h3>
+<h3 id="sqlite导入">SQLite导入<a class="headerlink" href="#sqlite导入" title="Permanent link">¶</a></h3>
 <h4 id="前言">前言<a class="headerlink" href="#前言" title="Permanent link">¶</a></h4>
 <p>本文的导入导出工具都存在各种各样的问题。<del>为了提高准确度和效率</del>，采用<span class="ezlinks_not_found ezlinks_not_found" src="../../../../../%E9%9F%B3%E4%B9%90%E7%AE%A1%E7%90%86%E8%BD%AF%E4%BB%B6foobar2000#sqlite" title="音乐管理软件foobar2000 &gt; sqlite">音乐管理软件foobar2000 &gt; sqlite</span>编写SQL进行处理。</p>
 <p>SQL编辑器👇：</p>
@@ -804,7 +804,7 @@
 <li>使用<span class="ezlinks_not_found ezlinks_not_found" src="../../../../../%E9%9F%B3%E4%B9%90%E7%AE%A1%E7%90%86%E8%BD%AF%E4%BB%B6foobar2000#播放记录" title="Last.fm">Last.fm</span>插件导出为<a href="https://www.xspf.org/">XSPF</a>，包括：<code>title</code>、<code>creator</code>、<code>album</code>、<code>trackNum</code>、<code>duration</code>。编码方式貌似有问题，存在乱码问题</li>
 <li>其他插件（未验证）：<a href="https://github.com/Chocobo1/foo_xspf_1">GitHub - Chocobo1/foo_xspf_1: Import &amp; export XSPF playlist in foobar2000</a></li>
 </ul>
-<h3 id="SQLite导出">SQLite导出<a class="headerlink" href="#SQLite导出" title="Permanent link">¶</a></h3>
+<h3 id="sqlite导出">SQLite导出<a class="headerlink" href="#sqlite导出" title="Permanent link">¶</a></h3>
 <p>执行SQL后，在结果上右键复制即可</p>
 <div class="highlight"><pre><span></span><code><a href="#__codelineno-5-1" id="__codelineno-5-1" name="__codelineno-5-1"></a><span class="k">SELECT</span><span class="w"> </span><span class="k">distinct</span><span class="w"> </span><span class="n">b</span><span class="p">.</span><span class="n">title</span>
 <a href="#__codelineno-5-2" id="__codelineno-5-2" name="__codelineno-5-2"></a><span class="k">FROM</span><span class="w"> </span><span class="n">Playlist</span><span class="w"> </span><span class="n">b</span>
