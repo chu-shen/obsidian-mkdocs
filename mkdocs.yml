@@ -35,6 +35,7 @@ theme:
         - navigation.sections
         - search.suggest
         - search.highlight
+        - toc.follow
 # Extensions
 markdown_extensions:
   - footnotes
