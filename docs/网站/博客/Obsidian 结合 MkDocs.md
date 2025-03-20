@@ -8,13 +8,16 @@ tags:
   - 博客
   - 网站
   - github
+  - 经验
+  - 技巧
+  - 插件
 categories:
   - 网站
   - 博客
 description: 使用 obsidian-enveloppe 插件快速搭建基于 MkDocs 的网站，可缩短发布流程
 date: 2025-03-17T13:07:26+08:00
 abbrlink: 20250317130726
-updated: 2025-03-18T11:50:48+08:00
+updated: 2025-03-20T12:25:29+08:00
 share: true
 status: new
 ---
@@ -116,8 +119,10 @@ uv add mkdocs-statistics-plugin
 
 ## 已知不足
 
-- 双链、悬浮预览，具体可以对比 [[../../../Obsidian插件推荐#网络发布 / obsidian-digital-garden&Hexo|obsidian-digital-garden示例站点]]
+- 双链、悬浮预览，具体可以对比 [[../../Obsidian/Obsidian插件推荐#网络发布 / obsidian-digital-garden&Hexo|obsidian-digital-garden示例站点]]
 	- 悬浮预览使用的是 [Tippy.js](https://tippyjs.bootcss.com/)。效果不好，不能点击，而且必须是完整链接才能预览，所以基本没用
+- 中英混合的标题：会导致转换后链接内的标题导航失效，即与生成的目录链接不一致
+- 部分样式/插件不支持
 
 
 ## 小 tips
