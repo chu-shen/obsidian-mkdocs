@@ -7,6 +7,7 @@ tags:
   - 歌单
   - foobar2000
   - 数据迁移
+  - 网易云音乐
 categories:
   - 教程
   - 音乐
@@ -14,14 +15,14 @@ description: foobar2000中歌单导入导出方法介绍。主要包含foobar200
 date: 2022-08-16 12:53
 abbrlink: 20220816125305
 share: true
-updated: 2025-03-20T13:40:28+08:00
+updated: 2025-03-20T13:42:30+08:00
 ---
 
 [TOC]
 
 # foobar2000歌单导入导出
 
-> 本文档最后更新于：**<%+ tp.file.last_modified_date() %>** ，请注意文章时效性！
+
 
 ## 导入
 
