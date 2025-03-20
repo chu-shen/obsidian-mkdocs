@@ -117,7 +117,7 @@ uv add mkdocs-statistics-plugin
 	markdown_extensions:
 	- toc:
 	    permalink: true
-	    slugify: !!python/object/apply:pymdownx.slugs.slugify {}
+	    slugify: !!python/object/apply:pymdownx.slugs.slugify {kwds: {case: lower}}
 	```
 - Obsidian 中将 `Sluglify anchor in markdown links` 设置为 `Convert all to ……` (strict 模式)
 
