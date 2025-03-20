@@ -5,14 +5,14 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
-<meta content="foobar2000中歌单导入导出方法介绍。主要包含foobar2000的SQLite插件在导入导出中的应用" name="description"/>
+<meta content="通过使用脚本/工作流实现自动下载专辑" name="description"/>
 <meta content="chushen" name="author"/>
-<link href="https://md.chushen.xyz/%E6%95%99%E7%A8%8B/%E9%9F%B3%E4%B9%90/foobar2000%E6%AD%8C%E5%8D%95%E5%AF%BC%E5%85%A5%E5%AF%BC%E5%87%BA/" rel="canonical"/>
-<link href="../../../Obsidian/Obsidian%E6%8F%92%E4%BB%B6%E6%8E%A8%E8%8D%90/" rel="prev"/>
-<link href="../%E7%BD%91%E6%98%93%E4%BA%91%E6%AD%8C%E5%8D%95%E5%AF%BC%E5%85%A5%E5%AF%BC%E5%87%BA/" rel="next"/>
+<link href="https://md.chushen.xyz/%E6%95%99%E7%A8%8B/%E9%9F%B3%E4%B9%90/%E8%87%AA%E5%8A%A8%E5%8C%96%E5%A4%84%E7%90%86%E9%9F%B3%E4%B9%90%E4%B8%93%E8%BE%91/" rel="canonical"/>
+<link href="../%E7%BD%91%E6%98%93%E4%BA%91%E6%AD%8C%E5%8D%95%E5%AF%BC%E5%85%A5%E5%AF%BC%E5%87%BA/" rel="prev"/>
+<link href="../../../%E7%BD%91%E7%AB%99/%E5%8D%9A%E5%AE%A2/Obsidian%20%E7%BB%93%E5%90%88%20MkDocs/" rel="next"/>
 <link href="../../../_assets/meta/favicons.png" rel="icon"/>
 <meta content="mkdocs-1.6.1, mkdocs-material-9.5.49" name="generator"/>
-<title>foobar2000歌单导入导出 - CHUSHEN</title>
+<title>自动化处理音乐专辑 - CHUSHEN</title>
 <link href="../../../assets/stylesheets/main.6f8fc17f.min.css" rel="stylesheet"/>
 <link href="../../../assets/stylesheets/palette.06af60db.min.css" rel="stylesheet"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
@@ -35,11 +35,11 @@
 <meta content="https://md.chushen.xyz/_assets/meta/logo.png" property="og:image"/>
 <meta content="https://md.chushen.xyz/_assets/meta/logo.png" name="twitter:image"/>
 <meta content="https://md.chushen.xyz/" name="site_url"/>
-<meta content="foobar2000歌单导入导出" property="og:title"/>
-<meta content="foobar2000歌单导入导出" name="twitter:title"/>
-<meta content="foobar2000中歌单导入导出方法介绍。主要包含foobar2000的SQLite插件在导入导出中的应用" name="og:description"/>
-<meta content="foobar2000中歌单导入导出方法介绍。主要包含foobar2000的SQLite插件在导入导出中的应用" name="twitter:description"/>
-<script> document.title = "foobar2000歌单导入导出" </script>
+<meta content="自动化处理音乐专辑" property="og:title"/>
+<meta content="自动化处理音乐专辑" name="twitter:title"/>
+<meta content="通过使用脚本/工作流实现自动下载专辑" name="og:description"/>
+<meta content="通过使用脚本/工作流实现自动下载专辑" name="twitter:description"/>
+<script> document.title = "自动化处理音乐专辑" </script>
 <link href="../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
     html.glightbox-open { overflow: initial; height: 100%; }
     .gslide-title { margin-top: 0px; user-select: text; }
@@ -79,7 +79,7 @@
 <div class="md-header__topic" data-md-component="header-topic">
 <span class="md-ellipsis">
             
-              foobar2000歌单导入导出
+              自动化处理音乐专辑
             
           </span>
 </div>
@@ -161,7 +161,7 @@
         </a>
 </li>
 <li class="md-tabs__item md-tabs__item--active">
-<a class="md-tabs__link" href="./">
+<a class="md-tabs__link" href="../foobar2000%E6%AD%8C%E5%8D%95%E5%AF%BC%E5%85%A5%E5%AF%BC%E5%87%BA/">
 <svg height="18" viewbox="0 0 20 20" width="18" xmlns="http://www.w3.org/2000/svg"><path d="M3 5.5v6.604l1.5-2.6a3 3 0 0 1 2.599-1.5H15V7.5A1.5 1.5 0 0 0 13.5 6h-4a.5.5 0 0 1-.353-.146L7.44 4.146A.5.5 0 0 0 7.086 4H4.5A1.5 1.5 0 0 0 3 5.5m1.284 10.485q.106.015.22.015H13.9a2 2 0 0 0 1.732-1l2.163-3.745a1.5 1.5 0 0 0-1.3-2.25H7.1a2 2 0 0 0-1.732 1L3.205 13.75a1.5 1.5 0 0 0 1.079 2.235M2 14.46V5.5A2.5 2.5 0 0 1 4.5 3h2.586a1.5 1.5 0 0 1 1.06.44L9.708 5H13.5A2.5 2.5 0 0 1 16 7.5v.505h.496c1.925 0 3.128 2.083 2.166 3.75L16.499 15.5a3 3 0 0 1-2.598 1.5h-9.4q-.095 0-.186-.007a2.46 2.46 0 0 1-1.438-.592A2.5 2.5 0 0 1 2 14.461" fill="currentColor"></path></svg>
     
   
@@ -266,147 +266,13 @@
             音乐
           </label>
 <ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item md-nav__item--active">
-<input class="md-nav__toggle md-toggle" id="__toc" type="checkbox"/>
-<label class="md-nav__link md-nav__link--active" for="__toc">
-<svg fill="currentColor" height="16px" viewbox="0 0 24 24" width="16px" xmlns="http://www.w3.org/2000/svg"><path d="M19.903 8.586a.997.997 0 0 0-.196-.293l-6-6a.997.997 0 0 0-.293-.196c-.03-.014-.062-.022-.094-.033a.991.991 0 0 0-.259-.051C13.04 2.011 13.021 2 13 2H6c-1.103 0-2 .897-2 2v16c0 1.103.897 2 2 2h12c1.103 0 2-.897 2-2V9c0-.021-.011-.04-.013-.062a.952.952 0 0 0-.051-.259c-.01-.032-.019-.063-.033-.093zM16.586 8H14V5.414L16.586 8zM6 20V4h6v5a1 1 0 0 0 1 1h5l.002 10H6z"></path><path d="M8 12h8v2H8zm0 4h8v2H8zm0-8h2v2H8z"></path></svg>
-<span class="md-ellipsis">
-    foobar2000歌单导入导出
-  </span>
-<span class="md-nav__icon md-icon"></span>
-</label>
-<a class="md-nav__link md-nav__link--active" href="./">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../foobar2000%E6%AD%8C%E5%8D%95%E5%AF%BC%E5%85%A5%E5%AF%BC%E5%87%BA/">
 <svg fill="currentColor" height="16px" viewbox="0 0 24 24" width="16px" xmlns="http://www.w3.org/2000/svg"><path d="M19.903 8.586a.997.997 0 0 0-.196-.293l-6-6a.997.997 0 0 0-.293-.196c-.03-.014-.062-.022-.094-.033a.991.991 0 0 0-.259-.051C13.04 2.011 13.021 2 13 2H6c-1.103 0-2 .897-2 2v16c0 1.103.897 2 2 2h12c1.103 0 2-.897 2-2V9c0-.021-.011-.04-.013-.062a.952.952 0 0 0-.051-.259c-.01-.032-.019-.063-.033-.093zM16.586 8H14V5.414L16.586 8zM6 20V4h6v5a1 1 0 0 0 1 1h5l.002 10H6z"></path><path d="M8 12h8v2H8zm0 4h8v2H8zm0-8h2v2H8z"></path></svg>
 <span class="md-ellipsis">
     foobar2000歌单导入导出
   </span>
 </a>
-<nav aria-label="目录" class="md-nav md-nav--secondary">
-<label class="md-nav__title" for="__toc">
-<span class="md-nav__icon md-icon"></span>
-      目录
-    </label>
-<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#foobar2000">
-<span class="md-ellipsis">
-      foobar2000歌单导入导出
-    </span>
-</a>
-<nav aria-label="foobar2000歌单导入导出" class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#_1">
-<span class="md-ellipsis">
-      导入
-    </span>
-</a>
-<nav aria-label="导入" class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#_2">
-<span class="md-ellipsis">
-      一些方法
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#m3u">
-<span class="md-ellipsis">
-      m3u
-    </span>
-</a>
-<nav aria-label="m3u" class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#m3u_1">
-<span class="md-ellipsis">
-      利用m3u路径匹配
-    </span>
-</a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#sqlite">
-<span class="md-ellipsis">
-      SQLite导入
-    </span>
-</a>
-<nav aria-label="SQLite导入" class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#_3">
-<span class="md-ellipsis">
-      前言
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#_4">
-<span class="md-ellipsis">
-      准备歌曲
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#_5">
-<span class="md-ellipsis">
-      建表
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#_6">
-<span class="md-ellipsis">
-      列表插入匹配歌曲
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#_7">
-<span class="md-ellipsis">
-      其他操作
-    </span>
-</a>
-</li>
-</ul>
-</nav>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#_8">
-<span class="md-ellipsis">
-      导出
-    </span>
-</a>
-<nav aria-label="导出" class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#_9">
-<span class="md-ellipsis">
-      一些方法
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#sqlite_1">
-<span class="md-ellipsis">
-      SQLite导出
-    </span>
-</a>
-</li>
-</ul>
-</nav>
-</li>
-</ul>
-</nav>
-</li>
-</ul>
-</nav>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="../%E7%BD%91%E6%98%93%E4%BA%91%E6%AD%8C%E5%8D%95%E5%AF%BC%E5%85%A5%E5%AF%BC%E5%87%BA/">
@@ -416,13 +282,90 @@
   </span>
 </a>
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../%E8%87%AA%E5%8A%A8%E5%8C%96%E5%A4%84%E7%90%86%E9%9F%B3%E4%B9%90%E4%B8%93%E8%BE%91/">
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" id="__toc" type="checkbox"/>
+<label class="md-nav__link md-nav__link--active" for="__toc">
+<svg fill="currentColor" height="16px" viewbox="0 0 24 24" width="16px" xmlns="http://www.w3.org/2000/svg"><path d="M19.903 8.586a.997.997 0 0 0-.196-.293l-6-6a.997.997 0 0 0-.293-.196c-.03-.014-.062-.022-.094-.033a.991.991 0 0 0-.259-.051C13.04 2.011 13.021 2 13 2H6c-1.103 0-2 .897-2 2v16c0 1.103.897 2 2 2h12c1.103 0 2-.897 2-2V9c0-.021-.011-.04-.013-.062a.952.952 0 0 0-.051-.259c-.01-.032-.019-.063-.033-.093zM16.586 8H14V5.414L16.586 8zM6 20V4h6v5a1 1 0 0 0 1 1h5l.002 10H6z"></path><path d="M8 12h8v2H8zm0 4h8v2H8zm0-8h2v2H8z"></path></svg>
+<span class="md-ellipsis">
+    自动化处理音乐专辑
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<a class="md-nav__link md-nav__link--active" href="./">
 <svg fill="currentColor" height="16px" viewbox="0 0 24 24" width="16px" xmlns="http://www.w3.org/2000/svg"><path d="M19.903 8.586a.997.997 0 0 0-.196-.293l-6-6a.997.997 0 0 0-.293-.196c-.03-.014-.062-.022-.094-.033a.991.991 0 0 0-.259-.051C13.04 2.011 13.021 2 13 2H6c-1.103 0-2 .897-2 2v16c0 1.103.897 2 2 2h12c1.103 0 2-.897 2-2V9c0-.021-.011-.04-.013-.062a.952.952 0 0 0-.051-.259c-.01-.032-.019-.063-.033-.093zM16.586 8H14V5.414L16.586 8zM6 20V4h6v5a1 1 0 0 0 1 1h5l.002 10H6z"></path><path d="M8 12h8v2H8zm0 4h8v2H8zm0-8h2v2H8z"></path></svg>
 <span class="md-ellipsis">
     自动化处理音乐专辑
   </span>
 </a>
+<nav aria-label="目录" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_1">
+<span class="md-ellipsis">
+      自动化处理音乐专辑
+    </span>
+</a>
+<nav aria-label="自动化处理音乐专辑" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#jpopsukieu">
+<span class="md-ellipsis">
+      从Jpopsuki.eu下载
+    </span>
+</a>
+<nav aria-label="从Jpopsuki.eu下载" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_2">
+<span class="md-ellipsis">
+      查询样例
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#automa">
+<span class="md-ellipsis">
+      Automa自动下载专辑
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_3">
+<span class="md-ellipsis">
+      原理
+    </span>
+</a>
+<nav aria-label="原理" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_4">
+<span class="md-ellipsis">
+      前置条件
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_5">
+<span class="md-ellipsis">
+      使用说明
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
 </li>
 </ul>
 </nav>
@@ -499,114 +442,57 @@
     </label>
 <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#foobar2000">
-<span class="md-ellipsis">
-      foobar2000歌单导入导出
-    </span>
-</a>
-<nav aria-label="foobar2000歌单导入导出" class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
 <a class="md-nav__link" href="#_1">
 <span class="md-ellipsis">
-      导入
+      自动化处理音乐专辑
     </span>
 </a>
-<nav aria-label="导入" class="md-nav">
+<nav aria-label="自动化处理音乐专辑" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#jpopsukieu">
+<span class="md-ellipsis">
+      从Jpopsuki.eu下载
+    </span>
+</a>
+<nav aria-label="从Jpopsuki.eu下载" class="md-nav">
 <ul class="md-nav__list">
 <li class="md-nav__item">
 <a class="md-nav__link" href="#_2">
 <span class="md-ellipsis">
-      一些方法
+      查询样例
     </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#m3u">
+<a class="md-nav__link" href="#automa">
 <span class="md-ellipsis">
-      m3u
+      Automa自动下载专辑
     </span>
 </a>
-<nav aria-label="m3u" class="md-nav">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_3">
+<span class="md-ellipsis">
+      原理
+    </span>
+</a>
+<nav aria-label="原理" class="md-nav">
 <ul class="md-nav__list">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#m3u_1">
+<a class="md-nav__link" href="#_4">
 <span class="md-ellipsis">
-      利用m3u路径匹配
+      前置条件
     </span>
 </a>
 </li>
 </ul>
 </nav>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#sqlite">
-<span class="md-ellipsis">
-      SQLite导入
-    </span>
-</a>
-<nav aria-label="SQLite导入" class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#_3">
-<span class="md-ellipsis">
-      前言
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#_4">
-<span class="md-ellipsis">
-      准备歌曲
-    </span>
-</a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#_5">
 <span class="md-ellipsis">
-      建表
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#_6">
-<span class="md-ellipsis">
-      列表插入匹配歌曲
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#_7">
-<span class="md-ellipsis">
-      其他操作
-    </span>
-</a>
-</li>
-</ul>
-</nav>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#_8">
-<span class="md-ellipsis">
-      导出
-    </span>
-</a>
-<nav aria-label="导出" class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#_9">
-<span class="md-ellipsis">
-      一些方法
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#sqlite_1">
-<span class="md-ellipsis">
-      SQLite导出
+      使用说明
     </span>
 </a>
 </li>
@@ -646,10 +532,9 @@
 -->
 <!-- Tags -->
 <nav class="md-tags">
+<a class="md-tag" href="../../../tags/#">自动化</a>
 <a class="md-tag" href="../../../tags/#">音乐</a>
-<a class="md-tag" href="../../../tags/#">歌单</a>
-<a class="md-tag" href="../../../tags/#foobar2000">foobar2000</a>
-<a class="md-tag" href="../../../tags/#">数据迁移</a>
+<a class="md-tag" href="../../../tags/#automa">automa</a>
 </nav>
 <!-- Actions -->
 <!--
@@ -657,154 +542,75 @@
   page title (or respectively site name) is used as the main headline.
 -->
 <!-- Page content -->
+<h1 id="_1">自动化处理音乐专辑<a class="headerlink" href="#_1" title="Permanent link">¶</a></h1>
+<div style="margin-top: -30px; font-size: 0.75em; opacity: 0.7;">
+<p><span class="twemoji"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z"></path></svg></span> 约 471 个字 <span class="twemoji"><svg viewbox="0 0 640 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M392.8 1.2c-17-4.9-34.7 5-39.6 22l-128 448c-4.9 17 5 34.7 22 39.6s34.7-5 39.6-22l128-448c4.9-17-5-34.7-22-39.6m80.6 120.1c-12.5 12.5-12.5 32.8 0 45.3l89.3 89.4-89.4 89.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l112-112c12.5-12.5 12.5-32.8 0-45.3l-112-112c-12.5-12.5-32.8-12.5-45.3 0zm-306.7 0c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3l112 112c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256l89.4-89.4c12.5-12.5 12.5-32.8 0-45.3"></path></svg></span> 7 行代码 <span class="twemoji"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M21 17H7V3h14m0-2H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2M3 5H1v16a2 2 0 0 0 2 2h16v-2H3m12.96-10.71-2.75 3.54-1.96-2.36L8.5 15h11z"></path></svg></span> 1 张图片 <span class="twemoji"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z"></path></svg></span> 预计阅读时间 2 分钟</p>
+</div>
 <div class="toc">
 <ul>
-<li><a href="#foobar2000">foobar2000歌单导入导出</a><ul>
-<li><a href="#_1">导入</a><ul>
-<li><a href="#_2">一些方法</a></li>
-<li><a href="#m3u">m3u</a><ul>
-<li><a href="#m3u_1">利用m3u路径匹配</a></li>
+<li><a href="#_1">自动化处理音乐专辑</a><ul>
+<li><a href="#jpopsukieu">从Jpopsuki.eu下载</a><ul>
+<li><a href="#_2">查询样例</a></li>
+<li><a href="#automa">Automa自动下载专辑</a></li>
+<li><a href="#_3">原理</a><ul>
+<li><a href="#_4">前置条件</a></li>
 </ul>
 </li>
-<li><a href="#sqlite">SQLite导入</a><ul>
-<li><a href="#_3">前言</a></li>
-<li><a href="#_4">准备歌曲</a></li>
-<li><a href="#_5">建表</a></li>
-<li><a href="#_6">列表插入匹配歌曲</a></li>
-<li><a href="#_7">其他操作</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><a href="#_8">导出</a><ul>
-<li><a href="#_9">一些方法</a></li>
-<li><a href="#sqlite_1">SQLite导出</a></li>
+<li><a href="#_5">使用说明</a></li>
 </ul>
 </li>
 </ul>
 </li>
 </ul>
 </div>
-<h1 id="foobar2000">foobar2000歌单导入导出<a class="headerlink" href="#foobar2000" title="Permanent link">¶</a></h1>
-<div style="margin-top: -30px; font-size: 0.75em; opacity: 0.7;">
-<p><span class="twemoji"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z"></path></svg></span> 约 621 个字 <span class="twemoji"><svg viewbox="0 0 640 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M392.8 1.2c-17-4.9-34.7 5-39.6 22l-128 448c-4.9 17 5 34.7 22 39.6s34.7-5 39.6-22l128-448c4.9-17-5-34.7-22-39.6m80.6 120.1c-12.5 12.5-12.5 32.8 0 45.3l89.3 89.4-89.4 89.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l112-112c12.5-12.5 12.5-32.8 0-45.3l-112-112c-12.5-12.5-32.8-12.5-45.3 0zm-306.7 0c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3l112 112c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256l89.4-89.4c12.5-12.5 12.5-32.8 0-45.3"></path></svg></span> 51 行代码 <span class="twemoji"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M21 17H7V3h14m0-2H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2M3 5H1v16a2 2 0 0 0 2 2h16v-2H3m12.96-10.71-2.75 3.54-1.96-2.36L8.5 15h11z"></path></svg></span> 2 张图片 <span class="twemoji"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z"></path></svg></span> 预计阅读时间 3 分钟</p>
-</div>
-<blockquote>
-<p>本文档最后更新于：<strong>&lt;%+ tp.file.last_modified_date() %&gt;</strong> ，请注意文章时效性！</p>
-</blockquote>
-<h2 id="_1">导入<a class="headerlink" href="#_1" title="Permanent link">¶</a></h2>
-<h3 id="_2">一些方法<a class="headerlink" href="#_2" title="Permanent link">¶</a></h3>
-<ul>
-<li>导入fpl/m3u/m3u8</li>
-<li>
-<p>使用<span class="ezlinks_not_found ezlinks_not_found" src="../../../../../%E9%9F%B3%E4%B9%90%E7%AE%A1%E7%90%86%E8%BD%AF%E4%BB%B6foobar2000#播放记录" title="Last.fm">Last.fm</span>插件导入<a href="https://www.xspf.org/">XSPF</a>，元数据必须包括<code>title</code>和<code>creator</code>，格式参照下面：</p>
-<div class="highlight"><pre><span></span><code><a href="#__codelineno-0-1" id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="cp">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</span>
-<a href="#__codelineno-0-2" id="__codelineno-0-2" name="__codelineno-0-2"></a><span class="nt">&lt;playlist</span><span class="w"> </span><span class="na">version=</span><span class="s">"1"</span><span class="w"> </span><span class="na">xmlns=</span><span class="s">"http://xspf.org/ns/0/"</span><span class="nt">&gt;</span>
-<a href="#__codelineno-0-3" id="__codelineno-0-3" name="__codelineno-0-3"></a><span class="w">	</span><span class="nt">&lt;trackList&gt;</span>
-<a href="#__codelineno-0-4" id="__codelineno-0-4" name="__codelineno-0-4"></a><span class="w">          </span><span class="nt">&lt;track&gt;</span>
-<a href="#__codelineno-0-5" id="__codelineno-0-5" name="__codelineno-0-5"></a><span class="w">              </span><span class="nt">&lt;location&gt;</span>https://music.163.com/song?id=544000653<span class="nt">&lt;/location&gt;</span>
-<a href="#__codelineno-0-6" id="__codelineno-0-6" name="__codelineno-0-6"></a><span class="w">              </span><span class="nt">&lt;title&gt;</span>Is<span class="w"> </span>This<span class="w"> </span>Love<span class="nt">&lt;/title&gt;</span>
-<a href="#__codelineno-0-7" id="__codelineno-0-7" name="__codelineno-0-7"></a><span class="w">              </span><span class="nt">&lt;album&gt;</span>THE<span class="w"> </span>IDOLM@STER<span class="w"> </span>MASTER<span class="w"> </span>SPECIAL<span class="w"> </span>03<span class="nt">&lt;/album&gt;</span>
-<a href="#__codelineno-0-8" id="__codelineno-0-8" name="__codelineno-0-8"></a><span class="w">              </span><span class="nt">&lt;creator&gt;</span>我那覇響<span class="nt">&lt;/creator&gt;</span>
-<a href="#__codelineno-0-9" id="__codelineno-0-9" name="__codelineno-0-9"></a><span class="w">            </span><span class="nt">&lt;/track&gt;</span>
-<a href="#__codelineno-0-10" id="__codelineno-0-10" name="__codelineno-0-10"></a><span class="w">	</span><span class="nt">&lt;/trackList&gt;</span>
-<a href="#__codelineno-0-11" id="__codelineno-0-11" name="__codelineno-0-11"></a><span class="nt">&lt;/playlist&gt;</span>
+<h2 id="jpopsukieu">从Jpopsuki.eu下载<a class="headerlink" href="#jpopsukieu" title="Permanent link">¶</a></h2>
+<h3 id="_2">查询样例<a class="headerlink" href="#_2" title="Permanent link">¶</a></h3>
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-0-1" id="__codelineno-0-1" name="__codelineno-0-1"></a>// 普通查询链接
+<a href="#__codelineno-0-2" id="__codelineno-0-2" name="__codelineno-0-2"></a>https://jpopsuki.eu/torrents.php?searchstr=BOOTLEG&amp;searchsubmit=1&amp;filter_cat[1]=1&amp;filter_cat[2]=1&amp;disablegrouping=1&amp;order_by=s4
+<a href="#__codelineno-0-3" id="__codelineno-0-3" name="__codelineno-0-3"></a>
+<a href="#__codelineno-0-4" id="__codelineno-0-4" name="__codelineno-0-4"></a>// 高级查询链接
+<a href="#__codelineno-0-5" id="__codelineno-0-5" name="__codelineno-0-5"></a>https://jpopsuki.eu/torrents.php?action=advanced&amp;artistname=米津玄師&amp;torrentname=BOOTLEG&amp;searchsubmit=1&amp;filter_cat[1]=1&amp;filter_cat[2]=1&amp;disablegrouping=1&amp;order_by=s4
 </code></pre></div>
-</li>
-</ul>
-<h3 id="m3u">m3u<a class="headerlink" href="#m3u" title="Permanent link">¶</a></h3>
-<h4 id="m3u_1">利用m3u路径匹配<a class="headerlink" href="#m3u_1" title="Permanent link">¶</a></h4>
-<div class="admonition abstract">
-<p class="admonition-title">Tldr</p>
-<p>此脚本<mark style="background: #FF5582A6;">效果不好</mark>，对音乐的规范性有要求，因为它是按照歌曲名及歌手来匹配音乐路径的，准确率低，不推荐使用</p>
-</div>
-<p><code>m3u</code>在<code>foobar2000</code>中是绝对路径，可以扫描本地音乐然后导入👉<a href="../%E7%BD%91%E6%98%93%E4%BA%91%E6%AD%8C%E5%8D%95%E5%AF%BC%E5%85%A5%E5%AF%BC%E5%87%BA/#lx-music" title="网易云歌单导入导出 &gt; lx-music">网易云歌单导入导出 &gt; lx-music</a></p>
-<p>然后可以使用此脚本匹配本地音乐，生成<code>m3u8</code>👉<a href="https://github.com/LuckyPuppy514/txt-to-m3u">GitHub - LuckyPuppy514/txt-to-m3u: 一个用于把洛雪音乐txt歌单转m3u歌单的 Powershell 脚本</a></p>
-<h3 id="sqlite">SQLite导入<a class="headerlink" href="#sqlite" title="Permanent link">¶</a></h3>
-<h4 id="_3">前言<a class="headerlink" href="#_3" title="Permanent link">¶</a></h4>
-<p>本文的导入导出工具都存在各种各样的问题。<del>为了提高准确度和效率</del>，采用<span class="ezlinks_not_found ezlinks_not_found" src="../../../../../%E9%9F%B3%E4%B9%90%E7%AE%A1%E7%90%86%E8%BD%AF%E4%BB%B6foobar2000#sqlite" title="音乐管理软件foobar2000 &gt; sqlite">音乐管理软件foobar2000 &gt; sqlite</span>编写SQL进行处理。</p>
-<p>SQL编辑器👇：</p>
-<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../../../_assets/img/Pasted%20image%2020220810214137.png"><img alt="../../../900其他/920Image/csimg/c/s/i/m/g/Pasted image 20220810214137.png" src="../../../_assets/img/Pasted%20image%2020220810214137.png" title="../../../900其他/920Image/csimg/c/s/i/m/g/Pasted image 20220810214137.png"/></a></p>
-<div class="admonition danger">
-<p class="admonition-title">注意事项</p>
-<p>为了在创建播放列表后更新数据库，需要开启下面的选项（说明见<code>AdvancedOptions.html</code>）：<br/>
-<a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../../../_assets/img/Pasted%20image%2020220526145448.png"><img alt="../../../900其他/920Image/csimg/c/s/i/m/g/Pasted image 20220526145448.png" src="../../../_assets/img/Pasted%20image%2020220526145448.png" title="../../../900其他/920Image/csimg/c/s/i/m/g/Pasted image 20220526145448.png"/></a></p>
-<p><strong>注意！！！</strong>：此插件在使用时存在极大的闪退风险。因此在使用前请先退出foobar2000（自动保存更新数据，如：歌曲等级），然后重新打开使用。再确认导入的歌单大致符合要求后，重来一遍上述操作。</p>
-</div>
-<h4 id="_4">准备歌曲<a class="headerlink" href="#_4" title="Permanent link">¶</a></h4>
-<div class="admonition tip">
-<p class="admonition-title">Tip</p>
+<h3 id="automa">Automa自动下载专辑<a class="headerlink" href="#automa" title="Permanent link">¶</a></h3>
+<p>使用<a href="https://www.automa.site/workflow/n7J4VANsXLdnFClhTP2yX">Automa工作流-下载Jpop种子</a>执行下载</p>
+<h3 id="_3">原理<a class="headerlink" href="#_3" title="Permanent link">¶</a></h3>
+<p>根据<a href="./#查询样例" title="Jpopsuki查询链接">Jpopsuki查询链接</a>，拼接上我们<a href="../%E7%BD%91%E6%98%93%E4%BA%91%E6%AD%8C%E5%8D%95%E5%AF%BC%E5%85%A5%E5%AF%BC%E5%87%BA/#导出到本地" title="需要下载的专辑">需要下载的专辑</a>，然后进行搜索。</p>
+<p><strong>搜索模式</strong>分为两种：</p>
 <ul>
-<li>歌曲名中<code>'</code>需转义，改为<code>''</code></li>
+<li>高级搜索：使用歌手与专辑进行搜索，具有精确度高、匹配率低的特点</li>
+<li>普通搜索：只使用专辑进行搜索，具有精确度低、匹配率高的特点</li>
 </ul>
+<p><strong>搜索逻辑</strong>：如果存在歌手列，则首先使用高级搜索，如果失败则使用普通搜索。如果两种模式均无结果，则记录进下载失败列表，并在下载完成后导出此文件。</p>
+<div class="admonition warning">
+<p class="admonition-title">下载说明</p>
+<p>只搜索<code>album</code>和<code>single</code>分类，并且默认下载文件最大的种子。如果种子名包含<code>ISO</code>等不需要的格式，需要手动重新搜索下载</p>
 </div>
-<p>首先将需<a href="../%E7%BD%91%E6%98%93%E4%BA%91%E6%AD%8C%E5%8D%95%E5%AF%BC%E5%85%A5%E5%AF%BC%E5%87%BA/#导出到本地" title="导入的歌曲标题">导入的歌曲标题</a>复制出来，标题之间以这三个符号(<code>','</code>)分隔，首尾添加<code>'</code></p>
-<h4 id="_5">建表<a class="headerlink" href="#_5" title="Permanent link">¶</a></h4>
-<p>首先创建虚拟表<code>Import_From_NetEase</code>和标题表：<br/>
-<div class="highlight"><pre><span></span><code><a href="#__codelineno-1-1" id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="k">CREATE</span><span class="w"> </span><span class="n">VIRTUAL</span><span class="w"> </span><span class="k">TABLE</span><span class="w"> </span><span class="n">Import_From_NetEase</span><span class="w"> </span><span class="k">USING</span><span class="w"> </span><span class="n">MetaDB_Module</span><span class="p">(</span><span class="n">no_multivalue_split</span><span class="p">,</span><span class="w"> </span><span class="n">playlist</span><span class="p">);</span>
-<a href="#__codelineno-1-2" id="__codelineno-1-2" name="__codelineno-1-2"></a>
-<a href="#__codelineno-1-3" id="__codelineno-1-3" name="__codelineno-1-3"></a><span class="c1">-- 其他可选操作👇</span>
-<a href="#__codelineno-1-4" id="__codelineno-1-4" name="__codelineno-1-4"></a><span class="c1">-- 创建包含标题名的表</span>
-<a href="#__codelineno-1-5" id="__codelineno-1-5" name="__codelineno-1-5"></a><span class="k">CREATE</span><span class="w"> </span><span class="k">TABLE</span><span class="w"> </span><span class="n">NetEase_Titles</span><span class="p">(</span><span class="n">titleName</span><span class="p">);</span>
-<a href="#__codelineno-1-6" id="__codelineno-1-6" name="__codelineno-1-6"></a><span class="c1">-- 插入得到的标题</span>
-<a href="#__codelineno-1-7" id="__codelineno-1-7" name="__codelineno-1-7"></a><span class="k">INSERT</span><span class="w"> </span><span class="k">INTO</span><span class="w"> </span><span class="n">NetEase_Titles</span><span class="w"> </span><span class="k">VALUES</span><span class="w"> </span><span class="p">(</span><span class="s1">'Is This Love'</span><span class="p">),(</span><span class="s1">'遠い音楽'</span><span class="p">);</span>
-<a href="#__codelineno-1-8" id="__codelineno-1-8" name="__codelineno-1-8"></a><span class="w">	</span>
-<a href="#__codelineno-1-9" id="__codelineno-1-9" name="__codelineno-1-9"></a><span class="c1">-- 清空表（导入其他标题前执行）</span>
-<a href="#__codelineno-1-10" id="__codelineno-1-10" name="__codelineno-1-10"></a><span class="k">DELETE</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">NetEase_Titles</span><span class="p">;</span>
-<a href="#__codelineno-1-11" id="__codelineno-1-11" name="__codelineno-1-11"></a><span class="c1">-- 删除表（完工退出时执行）</span>
-<a href="#__codelineno-1-12" id="__codelineno-1-12" name="__codelineno-1-12"></a><span class="k">DROP</span><span class="w"> </span><span class="k">TABLE</span><span class="w"> </span><span class="n">NetEase_Titles</span><span class="p">;</span>
-</code></pre></div></p>
-<h4 id="_6">列表插入匹配歌曲<a class="headerlink" href="#_6" title="Permanent link">¶</a></h4>
-<p>插入完全匹配歌曲。用<a href="./#准备歌曲" title="foobar2000歌单导入导出 &gt; 准备歌曲">foobar2000歌单导入导出 &gt; 准备歌曲</a>步骤的结果替换下面的<code>'菫','黒の剣巫'</code>：<br/>
-<div class="highlight"><pre><span></span><code><a href="#__codelineno-2-1" id="__codelineno-2-1" name="__codelineno-2-1"></a><span class="k">INSERT</span><span class="w"> </span><span class="k">INTO</span><span class="w"> </span><span class="n">Import_From_NetEase</span><span class="w"> </span><span class="p">(</span><span class="n">path</span><span class="p">,</span><span class="n">subsong</span><span class="p">,</span><span class="w"> </span><span class="n">playlist_name</span><span class="p">)</span>
-<a href="#__codelineno-2-2" id="__codelineno-2-2" name="__codelineno-2-2"></a><span class="k">SELECT</span><span class="w"> </span><span class="n">a</span><span class="p">.</span><span class="n">path</span><span class="p">,</span><span class="n">a</span><span class="p">.</span><span class="n">subsong</span><span class="p">,</span>
-<a href="#__codelineno-2-3" id="__codelineno-2-3" name="__codelineno-2-3"></a><span class="w">    </span><span class="s1">'需要插入的播放列表，可自动创建'</span>
-<a href="#__codelineno-2-4" id="__codelineno-2-4" name="__codelineno-2-4"></a><span class="k">FROM</span><span class="w"> </span><span class="n">MediaLibrary</span><span class="w"> </span><span class="n">a</span>
-<a href="#__codelineno-2-5" id="__codelineno-2-5" name="__codelineno-2-5"></a><span class="k">WHERE</span><span class="w"> </span><span class="n">title</span><span class="w"> </span><span class="k">IN</span><span class="p">(</span><span class="s1">'菫'</span><span class="p">,</span><span class="s1">'黒の剣巫'</span><span class="p">);</span>
-<a href="#__codelineno-2-6" id="__codelineno-2-6" name="__codelineno-2-6"></a>
-<a href="#__codelineno-2-7" id="__codelineno-2-7" name="__codelineno-2-7"></a><span class="c1">-- 其他过滤条件，比特率大于320，专辑以THE IDOLM@STER开头</span>
-<a href="#__codelineno-2-8" id="__codelineno-2-8" name="__codelineno-2-8"></a><span class="c1">--bitrate&gt;320 AND album LIKE 'THE IDOLM@STER%' AND</span>
-</code></pre></div></p>
-<h4 id="_7">其他操作<a class="headerlink" href="#_7" title="Permanent link">¶</a></h4>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../../../_assets/img/Pasted%20image%2020220816135006.png"><img alt="流程图" src="../../../_assets/img/Pasted%20image%2020220816135006.png" title="流程图"/></a></p>
+<h4 id="_4">前置条件<a class="headerlink" href="#_4" title="Permanent link">¶</a></h4>
+<ul>
+<li>浏览器关闭<code>下载内容 &gt; 下载前询问每个文件的保存位置</code>，否则<code>另存为</code>操作需要手动点击保存</li>
+<li>允许Jpopsuki下载多个文件，对应<code>网站设置 &gt; 自动下载项 &gt; 允许</code>。不清楚的话可以直接运行，在jpopsuki界面<strong>会提示</strong>是否允许下载多个文件，点击允许即可</li>
+</ul>
+<h3 id="_5">使用说明<a class="headerlink" href="#_5" title="Permanent link">¶</a></h3>
 <ol>
-<li>插入<code>播放列表b</code>中不存在的<code>播放列表a</code>的歌曲到<code>待插入的列表</code><br/>
-<div class="highlight"><pre><span></span><code><a href="#__codelineno-3-1" id="__codelineno-3-1" name="__codelineno-3-1"></a><span class="k">INSERT</span><span class="w"> </span><span class="k">INTO</span><span class="w"> </span><span class="n">Import_From_NetEase</span><span class="w"> </span><span class="p">(</span><span class="n">path</span><span class="p">,</span><span class="n">subsong</span><span class="p">,</span><span class="w"> </span><span class="n">playlist_name</span><span class="p">)</span>
-<a href="#__codelineno-3-2" id="__codelineno-3-2" name="__codelineno-3-2"></a><span class="k">SELECT</span><span class="w"> </span><span class="n">a</span><span class="p">.</span><span class="n">path</span><span class="p">,</span><span class="n">a</span><span class="p">.</span><span class="n">subsong</span><span class="p">,</span>
-<a href="#__codelineno-3-3" id="__codelineno-3-3" name="__codelineno-3-3"></a><span class="w">    </span><span class="s1">'待插入的列表'</span>
-<a href="#__codelineno-3-4" id="__codelineno-3-4" name="__codelineno-3-4"></a><span class="k">FROM</span><span class="w"> </span><span class="n">Playlist</span><span class="w"> </span><span class="n">a</span>
-<a href="#__codelineno-3-5" id="__codelineno-3-5" name="__codelineno-3-5"></a><span class="k">WHERE</span><span class="w"> </span><span class="n">playlist_name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">'播放列表a'</span>
-<a href="#__codelineno-3-6" id="__codelineno-3-6" name="__codelineno-3-6"></a><span class="w">    </span><span class="k">AND</span><span class="w"> </span><span class="n">a</span><span class="p">.</span><span class="n">title</span><span class="w"> </span><span class="k">NOT</span><span class="w"> </span><span class="k">IN</span><span class="p">(</span>
-<a href="#__codelineno-3-7" id="__codelineno-3-7" name="__codelineno-3-7"></a><span class="w">        </span><span class="k">SELECT</span><span class="w"> </span><span class="n">b</span><span class="p">.</span><span class="n">title</span>
-<a href="#__codelineno-3-8" id="__codelineno-3-8" name="__codelineno-3-8"></a><span class="w">        </span><span class="k">FROM</span><span class="w"> </span><span class="n">Playlist</span><span class="w"> </span><span class="n">b</span>
-<a href="#__codelineno-3-9" id="__codelineno-3-9" name="__codelineno-3-9"></a><span class="w">        </span><span class="k">WHERE</span><span class="w"> </span><span class="n">b</span><span class="p">.</span><span class="n">playlist_name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">'播放列表b'</span>
-<a href="#__codelineno-3-10" id="__codelineno-3-10" name="__codelineno-3-10"></a><span class="w">    </span><span class="p">);</span>
-</code></pre></div></li>
-<li>输出未匹配到的歌曲<br/>
-<div class="highlight"><pre><span></span><code><a href="#__codelineno-4-1" id="__codelineno-4-1" name="__codelineno-4-1"></a><span class="k">SELECT</span><span class="w"> </span><span class="n">a</span><span class="p">.</span><span class="n">titleName</span>
-<a href="#__codelineno-4-2" id="__codelineno-4-2" name="__codelineno-4-2"></a><span class="k">FROM</span><span class="w"> </span><span class="n">NetEase_Titles</span><span class="w"> </span><span class="n">a</span>
-<a href="#__codelineno-4-3" id="__codelineno-4-3" name="__codelineno-4-3"></a><span class="k">WHERE</span><span class="w"> </span><span class="n">a</span><span class="p">.</span><span class="n">titleName</span><span class="w"> </span><span class="k">NOT</span><span class="w"> </span><span class="k">IN</span><span class="p">(</span>
-<a href="#__codelineno-4-4" id="__codelineno-4-4" name="__codelineno-4-4"></a><span class="w">        </span><span class="k">SELECT</span><span class="w"> </span><span class="n">b</span><span class="p">.</span><span class="n">title</span>
-<a href="#__codelineno-4-5" id="__codelineno-4-5" name="__codelineno-4-5"></a><span class="w">        </span><span class="k">FROM</span><span class="w"> </span><span class="n">Playlist</span><span class="w"> </span><span class="n">b</span>
-<a href="#__codelineno-4-6" id="__codelineno-4-6" name="__codelineno-4-6"></a><span class="w">        </span><span class="k">WHERE</span><span class="w"> </span><span class="n">b</span><span class="p">.</span><span class="n">playlist_name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">'播放列表'</span>
-<a href="#__codelineno-4-7" id="__codelineno-4-7" name="__codelineno-4-7"></a><span class="w">    </span><span class="p">);</span>
-</code></pre></div></li>
+<li>点击：<code>循环数据 &gt; 插入数据 &gt; 导入文件 &gt; 选择上一步处理好的CSV文件</code></li>
 </ol>
-<h2 id="_8">导出<a class="headerlink" href="#_8" title="Permanent link">¶</a></h2>
-<h3 id="_9">一些方法<a class="headerlink" href="#_9" title="Permanent link">¶</a></h3>
-<ul>
-<li>保存为fpl（二进制）</li>
-<li>保存为m3u（部分字符不支持），仅文件名</li>
-<li>保存为m3u8，仅文件名</li>
-<li>使用<span class="ezlinks_not_found ezlinks_not_found" src="../../../../../%E9%9F%B3%E4%B9%90%E7%AE%A1%E7%90%86%E8%BD%AF%E4%BB%B6foobar2000#播放记录" title="Last.fm">Last.fm</span>插件导出为<a href="https://www.xspf.org/">XSPF</a>，包括：<code>title</code>、<code>creator</code>、<code>album</code>、<code>trackNum</code>、<code>duration</code>。编码方式貌似有问题，存在乱码问题</li>
-<li>其他插件（未验证）：<a href="https://github.com/Chocobo1/foo_xspf_1">GitHub - Chocobo1/foo_xspf_1: Import &amp; export XSPF playlist in foobar2000</a></li>
-</ul>
-<h3 id="sqlite_1">SQLite导出<a class="headerlink" href="#sqlite_1" title="Permanent link">¶</a></h3>
-<p>执行SQL后，在结果上右键复制即可</p>
-<div class="highlight"><pre><span></span><code><a href="#__codelineno-5-1" id="__codelineno-5-1" name="__codelineno-5-1"></a><span class="k">SELECT</span><span class="w"> </span><span class="k">distinct</span><span class="w"> </span><span class="n">b</span><span class="p">.</span><span class="n">title</span>
-<a href="#__codelineno-5-2" id="__codelineno-5-2" name="__codelineno-5-2"></a><span class="k">FROM</span><span class="w"> </span><span class="n">Playlist</span><span class="w"> </span><span class="n">b</span>
-<a href="#__codelineno-5-3" id="__codelineno-5-3" name="__codelineno-5-3"></a><span class="k">WHERE</span><span class="w"> </span><span class="n">b</span><span class="p">.</span><span class="n">playlist_name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">'播放列表'</span>
-</code></pre></div>
-<p>然后使用 <span class="ezlinks_not_found ezlinks_not_found" src="../../../../../Excel%E6%93%8D%E4%BD%9C#两列去除重复项" title="Excel两列去除重复项">Excel两列去除重复项</span>筛选未匹配歌曲啥的~~</p>
+<div class="admonition warning">
+<p class="admonition-title">Attention</p>
+<p>首行为标题行（主键），包括：<code>专辑</code>（必需）、<code>歌手</code>（可选）、<code>其他</code>（无影响）</p>
+</div>
+<p>最后的结果应该是：<br/>
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-1-1" id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="p">[</span>
+<a href="#__codelineno-1-2" id="__codelineno-1-2" name="__codelineno-1-2"></a><span class="p">{</span>
+<a href="#__codelineno-1-3" id="__codelineno-1-3" name="__codelineno-1-3"></a><span class="w">    </span><span class="nt">"歌曲标题"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Wicked"</span><span class="p">,</span><span class="w"> </span><span class="c1">// 其他列无影响</span>
+<a href="#__codelineno-1-4" id="__codelineno-1-4" name="__codelineno-1-4"></a><span class="w">    </span><span class="nt">"歌手"</span><span class="p">:</span><span class="w"> </span><span class="s2">"星街すいせい"</span><span class="p">,</span><span class="w"> </span><span class="c1">// 可选</span>
+<a href="#__codelineno-1-5" id="__codelineno-1-5" name="__codelineno-1-5"></a><span class="w">    </span><span class="nt">"专辑"</span><span class="p">:</span><span class="w"> </span><span class="s2">"TEMPLATE"</span><span class="w"> </span><span class="c1">// 必需</span>
+<a href="#__codelineno-1-6" id="__codelineno-1-6" name="__codelineno-1-6"></a><span class="p">}</span>
+<a href="#__codelineno-1-7" id="__codelineno-1-7" name="__codelineno-1-7"></a><span class="p">]</span>
+</code></pre></div></p>
+<ol start="2">
+<li>点击执行工作流。会自动根据文件数据下载种子并导出下载失败的专辑</li>
+</ol>
 <!-- Source file information -->
 <!-- taken from 
 https://github.com/squidfunk/mkdocs-material/blob/master/src/partials/source-file.html -->
@@ -908,7 +714,7 @@ https://github.com/squidfunk/mkdocs-material/blob/master/src/partials/source-fil
     try {
       const index = document.querySelector('h1').innerHTML;
       if (index === "Index") {
-        document.querySelector('h1').innerHTML = "foobar2000歌单导入导出";
+        document.querySelector('h1').innerHTML = "自动化处理音乐专辑";
       }
     } catch (error) {
       // console.log(error);
