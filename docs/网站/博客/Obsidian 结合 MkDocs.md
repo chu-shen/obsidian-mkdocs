@@ -8,16 +8,13 @@ tags:
   - 博客
   - 网站
   - github
-  - 经验
-  - 技巧
-  - 插件
 categories:
   - 网站
   - 博客
 description: 使用 obsidian-enveloppe 插件快速搭建基于 MkDocs 的网站，可缩短发布流程
 date: 2025-03-17T13:07:26+08:00
 abbrlink: 20250317130726
-updated: 2025-03-20T16:31:46+08:00
+updated: 2025-03-20T16:45:22+08:00
 share: true
 status: new
 ---
@@ -115,15 +112,16 @@ uv add mkdocs-statistics-plugin
 
 对于中文标题必须进行修改后才能正确跳转链接
 
--  `mkdocs.yml` 中添加 `slugify`，指定[处理逻辑](https://squidfunk.github.io/mkdocs-material/setup/extensions/python-markdown/?h=permalink#+toc.slugify)，更多参数见[pymdown](https://facelessuser.github.io/pymdown-extensions/extras/slugs/)
+-  `mkdocs.yml` 中添加 `slugify`，指定[处理逻辑](https://squidfunk.github.io/mkdocs-material/setup/extensions/python-markdown/?h=permalink#+toc.slugify)
 	```yml
 	markdown_extensions:
-	  - toc:
-	      permalink: true
-	      slugify: !!python/object/apply:pymdownx.slugs.slugify {}
+	- toc:
+	    permalink: true
+	    slugify: !!python/object/apply:pymdownx.slugs.slugify {}
 	```
-
 - Obsidian 中将 `Sluglify anchor in markdown links` 设置为 `Convert all to ……` (strict 模式)
+
+不过由于 [obsidian-enveloppe](https://github.com/Enveloppe/obsidian-enveloppe/blob/d86555227f455c1f4382d772a3bf0e319e3aaf6a/src/conversion/links.ts#L290) 使用的 [slugify](https://www.npmjs.com/package/slugify) 包与 [pymdown](https://facelessuser.github.io/pymdown-extensions/extras/slugs/) 不同，细节上还是有差别，比如 `/` 的处理，导致不是完美匹配
 
 ## 成果
 
@@ -134,7 +132,6 @@ uv add mkdocs-statistics-plugin
 
 - 双链、悬浮预览，具体可以对比 [[../../Obsidian/Obsidian插件推荐#网络发布 / obsidian-digital-garden&Hexo|obsidian-digital-garden示例站点]]
 	- 悬浮预览使用的是 [Tippy.js](https://tippyjs.bootcss.com/)。效果不好，不能点击，而且必须是完整链接才能预览，所以基本没用
-- 中英混合的标题：会导致转换后链接内的标题导航失效，即与生成的目录链接不一致
 - 部分样式/插件不支持
 
 
