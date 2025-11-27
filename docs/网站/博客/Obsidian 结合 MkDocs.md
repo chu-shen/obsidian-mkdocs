@@ -1,6 +1,6 @@
 ---
 title: Obsidian 结合 MkDocs
-aliases: 
+aliases:
 author: chushen
 tags:
   - obsidian
@@ -8,13 +8,16 @@ tags:
   - 博客
   - 网站
   - github
+  - 经验
+  - 技巧
+  - 插件
 categories:
   - 网站
   - 博客
 description: 使用 obsidian-enveloppe 插件快速搭建基于 MkDocs 的网站，可缩短发布流程
 date: 2025-03-17T13:07:26+08:00
 abbrlink: 20250317130726
-updated: 2025-03-20T16:45:22+08:00
+updated: 2025-03-20T17:37:04+08:00
 share: true
 status: new
 ---
@@ -117,11 +120,13 @@ uv add mkdocs-statistics-plugin
 	markdown_extensions:
 	- toc:
 	    permalink: true
-	    slugify: !!python/object/apply:pymdownx.slugs.slugify {kwds: {case: lower}}
+	    slugify: !!python/object/apply:pymdownx.slugs.slugify {kwds: {case: lower}}
 	```
 - Obsidian 中将 `Sluglify anchor in markdown links` 设置为 `Convert all to ……` (strict 模式)
 
 不过由于 [obsidian-enveloppe](https://github.com/Enveloppe/obsidian-enveloppe/blob/d86555227f455c1f4382d772a3bf0e319e3aaf6a/src/conversion/links.ts#L290) 使用的 [slugify](https://www.npmjs.com/package/slugify) 包与 [pymdown](https://facelessuser.github.io/pymdown-extensions/extras/slugs/) 不同，细节上还是有差别，比如 `/` 的处理，导致不是完美匹配
+
+Enveloppe 需要[移除特殊字符](https://www.npmjs.com/package/slugify#remove)
 
 ## 成果
 
@@ -139,8 +144,8 @@ uv add mkdocs-statistics-plugin
 
 - `categories` 如果添加多个，会在目录中形成嵌套关系。如果使用 `/` 也会形成嵌套
 
-| 元数据字段    | 类型  | 说明                                      |
-| -------- | --- | --------------------------------------- |
-| Share    | 复选框 | 勾选代表分享上传至网络                             |
-| Comments | 复选框 | 勾选代表此篇文章开启[[Obsidian 结合 MkDocs#评论\|评论]] |
-| Status   | 文本  | 文章状态，MkDocs 支持的 `new`、`deprecated`、自定义  |
+| 元数据字段    | 类型  | 说明                                                                                                                                    |
+| -------- | --- | ------------------------------------------------------------------------------------------------------------------------------------- |
+| Share    | 复选框 | 勾选代表分享上传至网络                                                                                                                           |
+| Comments | 复选框 | 勾选代表此篇文章开启[[Obsidian 结合 MkDocs#评论\|评论]]                                                                                               |
+| Status   | 文本  | 文章状态，MkDocs 支持的 `new`、`deprecated`、[自定义](https://squidfunk.github.io/mkdocs-material/reference/?h=deprecated#setting-the-page-status) |
